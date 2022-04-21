@@ -1,0 +1,73 @@
+# ![Code Convention Templates](/Assets/github-image32x32.png) Code Convention Templates
+
+Solution templates for the .NET command-line interface and `Visual Studio`.
+
+These templates are for those who are familiar with Dependency Injection, Hosting, EFCore SQL Server and Sqlite.
+
+## ![Solution Templates](/Assets/github-image16x16.png) Solution Templates
+* [Console](/SolutionTemplates/Content/Console/)
+* [Desktop](/SolutionTemplates/Content/Desktop/)
+  *  [WinForms](/SolutionTemplates/Content/Desktop/WinForms/)
+  *  [WPF](/SolutionTemplates/Content/Desktop/WPF/)
+* [Web](/SolutionTemplates/Content/Web/)
+  * [Razor Pages](/SolutionTemplates/Content/Web/RazorPages)
+  * [Web API](/SolutionTemplates/Content/Web/WebApi)
+
+## ![Features](/Assets/github-image16x16.png) Features
+The following features are available for all solution templates, and have default configurations.
+* Dependency Injection
+* Generic Host
+* StyleCop configuration file
+* .editorconfig
+* create-database.bat: Creates an initial migration and database using the selected provider.
+* appsettings.json
+* LICENSE file for the solution (Optional)
+* Logging
+  * Generic Host
+  * Serilog (Optional)\
+    If selected, see appsettings.json for initial configuration.
+* Data Access with Entity Framework Core
+  * SQL Server Express LocalDB
+  * SQL Server Express
+  * Sqlite
+* AutoMapper (Optional)
+* FluentValidation (Optional)
+* MediatR (Optional)
+
+## ![Requirements](/Assets/github-image16x16.png) Requirements
+* [Visual Studio 2022](https://visualstudio.microsoft.com/launch/) (For Visual Studio use only)
+* [.NET 6.0](https://dotnet.microsoft.com/download/dotnet/6.0)
+* [Entity Framework Core tools for .NET Core CLI](https://docs.microsoft.com/en-us/ef/core/cli/dotnet)
+* [SQL Server Express](https://www.microsoft.com/en-us/sql-server/sql-server-downloads)
+
+## ![Installation](/Assets/github-image16x16.png) Installation
+.NET CLI
+```
+dotnet new --install AebSolutions.CodeConvention.SolutionTemplates::6.4.0
+```
+
+## ![Instructions](/Assets/github-image16x16.png) Instructions
+
+Create the database
+  + create-database.bat (root folder of solution)
+  + [.NET Core CLI](https://docs.microsoft.com/en-us/ef/core/cli/dotnet/)
+  + [Package Manager Console](https://docs.microsoft.com/en-us/ef/core/cli/powershell/)
+  
+If Sqlite is selected as the database provider, configure the `Build Action` to `None` and `Copy to Output Directory` to `Copy if newer` for the sqlite database that gets created in the project's root folder. Build the application after configuration.
+## ![Help](/Assets/github-image16x16.png) Help
+.NET CLI
+```
+dotnet new cc-console --help
+```
+```
+dotnet new cc-razorpages --help
+```
+```
+dotnet new cc-webapi --help
+```
+```
+dotnet new cc-winforms --help
+```
+```
+dotnet new cc-wpf --help
+```

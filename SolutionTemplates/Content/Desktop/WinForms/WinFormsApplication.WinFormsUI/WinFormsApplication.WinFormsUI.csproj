@@ -1,0 +1,66 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup Label="Build">
+        <OutputType>WinExe</OutputType>
+        <TargetFramework>net6.0-windows</TargetFramework>
+        <Nullable>enable</Nullable>
+        <UseWindowsForms>true</UseWindowsForms>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <!--#if (AddIcon)-->
+        <ApplicationIcon>Icon.ico</ApplicationIcon>
+        <PackageIcon>Icon.png</PackageIcon>
+        <!--#endif-->
+    </PropertyGroup>
+
+    <ItemGroup Label="Files">
+        <AdditionalFiles Include="..\stylecop.json" Link="stylecop.json" />
+        <Content Include="appsettings.json">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </Content>
+        <!--#if (AddIcon)-->
+        <Content Include="Icon.ico" />
+        <Content Include="..\Icon.png">
+            <Pack>True</Pack>
+            <PackagePath>\</PackagePath>
+        </Content>
+        <!--#endif-->
+    </ItemGroup>
+
+    <ItemGroup Label="Package References">
+        <!--#if (AddAutoMapper)-->
+        <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
+        <!--#endif-->
+        <!--#if (AddFluentValidation)-->
+        <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="10.4.0" />
+        <!--#endif-->
+        <!--#if (AddMediatR)-->
+        <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="10.0.1" />
+        <!--#endif-->
+        <!--#if (DatabaseProviderIsSqlite)-->
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="6.0.3" />
+        <!--#endif-->
+        <!--#if (DatabaseProviderIsSqlServer)-->
+        <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.3" />
+        <!--#endif-->
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.3">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+        <PackageReference Include="Microsoft.Extensions.Hosting" Version="6.0.1" />
+        <!--#if (UseSerilog)-->
+        <PackageReference Include="Serilog.Enrichers.Environment" Version="2.2.0" />
+        <PackageReference Include="Serilog.Enrichers.Process" Version="2.0.2" />
+        <PackageReference Include="Serilog.Enrichers.Thread" Version="3.1.0" />
+        <PackageReference Include="Serilog.Extensions.Hosting" Version="4.2.0" />
+        <PackageReference Include="Serilog.Settings.Configuration" Version="3.3.0" />
+        <PackageReference Include="Serilog.Sinks.Console" Version="4.0.1" />
+        <PackageReference Include="Serilog.Sinks.Debug" Version="2.0.0" />
+        <PackageReference Include="Serilog.Sinks.File" Version="5.0.0" />
+        <!--#endif-->
+        <PackageReference Include="StyleCop.Analyzers" Version="1.2.0-beta.406">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+    </ItemGroup>
+
+</Project>

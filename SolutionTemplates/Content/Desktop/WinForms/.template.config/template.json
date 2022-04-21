@@ -1,0 +1,380 @@
+{
+    "$schema": "https://json.schemastore.org/template.json",
+    "author": "Aeb Solutions",
+    "baselines": {
+    },
+    "classifications": [
+        "CodeConvention",
+        "Desktop",
+        "WinForms"
+    ],
+    "defaultName": "WinFormsApplication",
+    "description": "A solution for creating a WinForms application.",
+    "forms": {
+        "SolutionName": {
+            "identifier": "replace",
+            "pattern": "^SolutionName$",
+            "replacement": ""
+        }
+    },
+    "generatorVersions": "[1.0.0.0-*)",
+    "groupIdentity": "AebSolutions.CodeConvention.Desktop.WinForms",
+    // Guids from the solution file
+    "guids": [
+        // WinFormsUI
+        "{B061511D-3F8D-4BAD-B86C-0D604D5A47E5}",
+        // Solution Items
+        "{A960CAEF-7E58-4DA9-B908-65FC287A0D15}"
+    ],
+    "identity": "AebSolutions.CodeConvention.Desktop.WinForms.6.4",
+    "name": "Code Convention WinForms Application",
+    "placeholderFilename": "-.-",
+    "postActions": [
+        {
+            "actionId": "84C0DA21-51C8-4541-9940-6CA19AF04EE6",
+            "args": {
+                "files": "1"
+            },
+            "continueOnError": true,
+            "description": "Opens MainForm.cs in the editor.",
+            "manualInstructions": [
+            ]
+        }
+    ],
+    "precedence": 0,
+    "preferNameDirectory": true,
+    "primaryOutputs": [
+        {
+            "path": "WinFormsApplication.sln"
+        },
+		{
+			"condition": "(HostIdentifier != \"dotnetcli\" && HostIdentifier != \"dotnetcli-preview\")",
+			"path": "WinFormsApplication.WinFormsUI/Program.cs"
+		}
+    ],
+    "shortName": "cc-winforms",
+    "sourceName": "WinFormsApplication",
+    "sources": [
+        {
+            "modifiers": [
+                {
+                    "rename": {
+                        "create-database.cs": "create-database.bat"
+                    }
+                },
+                {
+                    "condition": "(!AddIcon)",
+                    "exclude": [
+                        "**/*.ico",
+                        "**/*.png",
+                        "**/*.resx"
+                    ] 
+                },
+                {
+                    "condition": "(DatabaseIsEmpty)",
+                    "exclude": [
+                        "WinFormsApplication.WinFormsUI/DataAccess/DbContexts/DatabaseNameContext.cs"
+                    ]
+                },
+                {
+                    "condition": "(!DatabaseIsEmpty)",
+                    "exclude": [
+                        "WinFormsApplication.WinFormsUI/DataAccess/DbContexts/SolutionNameContext.cs"
+                    ]
+                },
+                {
+                    "condition": "(DatabaseTableIsEmpty)",
+                    "exclude": [
+                        "WinFormsApplication.WinFormsUI/DataAccess/Entities/DatabaseTable.cs",
+                        "WinFormsApplication.WinFormsUI/DataAccess/Configurations/DatabaseTableConfiguration.cs"
+                    ]
+                },
+                {
+                    "condition": "(!DatabaseTableIsEmpty)",
+                    "exclude": [
+                        "WinFormsApplication.WinFormsUI/DataAccess/Entities/TodoItem.cs",
+                        "WinFormsApplication.WinFormsUI/DataAccess/Configurations/TodoItemConfiguration.cs"
+                    ]
+                },
+                {
+                    "condition": "(LicenseIdentifier == \"Apache-2.0\")",
+                    "exclude": [
+                        "LICENSE-BSD-3-Clause",
+                        "LICENSE-GPL-3.0",
+                        "LICENSE-MIT",
+                        "LICENSE-Unlicense"
+                    ],
+                    "rename": {
+                        "LICENSE-Apache-2.0": "LICENSE"
+                    }
+                },
+                {
+                    "condition": "(LicenseIdentifier == \"BSD-3-Clause\")",
+                    "exclude": [
+                        "LICENSE-Apache-2.0",
+                        "LICENSE-GPL-3.0",
+                        "LICENSE-MIT",
+                        "LICENSE-Unlicense"
+                    ],
+                    "rename": {
+                        "LICENSE-BSD-3-Clause": "LICENSE"
+                    }
+                },
+                {
+                    "condition": "(LicenseIdentifier == \"GPL-3.0\")",
+                    "exclude": [
+                        "LICENSE-Apache-2.0",
+                        "LICENSE-BSD-3-Clause",
+                        "LICENSE-MIT",
+                        "LICENSE-Unlicense"
+                    ],
+                    "rename": {
+                        "LICENSE-GPL-3.0": "LICENSE"
+                    }
+                },
+                {
+                    "condition": "(LicenseIdentifier == \"MIT\")",
+                    "exclude": [
+                        "LICENSE-Apache-2.0",
+                        "LICENSE-BSD-3-Clause",
+                        "LICENSE-GPL-3.0",
+                        "LICENSE-Unlicense"
+                    ],
+                    "rename": {
+                        "LICENSE-MIT": "LICENSE"
+                    }
+                },
+                {
+                    "condition": "(LicenseIdentifier == \"None\")",
+                    "exclude": [
+                        "LICENSE*"
+                    ]
+                },
+                {
+                    "condition": "(LicenseIdentifier == \"Unlicense\")",
+                    "exclude": [
+                        "LICENSE-Apache-2.0",
+                        "LICENSE-BSD-3-Clause",
+                        "LICENSE-GPL-3.0",
+                        "LICENSE-MIT"
+                    ],
+                    "rename": {
+                        "LICENSE-Unlicense": "LICENSE"
+                    }
+                },
+                {
+                    "condition": "(!UseSerilog)",
+                    "exclude": [
+                        "WinFormsApplication.WinFormsUI/Logging/**/*"
+                    ]
+                }
+            ]
+        }
+    ],
+    "symbols": {
+        // Visible
+        "Framework": {
+            "choices": [
+                {
+                    "choice": "net6.0",
+                    "description": "Target net6.0"
+                }
+            ],
+            "datatype": "choice",
+            "defaultValue": "net6.0",
+            "description": "The target framework for the Solution.",
+            "displayName": "Framework",
+            "isRequired": false,
+            "replaces": "net6.0",
+            "type": "parameter"
+        },
+        "Company": {
+            "datatype": "string",
+            "defaultValue": "",
+            "description": "The company or author name for the application. If omitted, the company or author name will be not be included in the file header.",
+            "displayName": "Company (Optional)",
+            "isRequired": false,
+            "replaces": "COMPANY-NAME",
+            "type": "parameter"
+        },
+        "LicenseIdentifier": {
+            "choices": [
+                {
+                    "choice": "Apache-2.0",
+                    "description": "Apache License 2.0"
+                },
+                {
+                    "choice": "BSD-3-Clause",
+                    "description": "BSD 3-Clause \"New\" or \"Revised\" License"
+                },
+                {
+                    "choice": "GPL-3.0",
+                    "description": "GNU General Public License v3.0"
+                },
+                {
+                    "choice": "MIT",
+                    "description": "MIT License"
+                },
+                {
+                    "choice": "None",
+                    "description": "No license"
+                },
+                {
+                    "choice": "Unlicense",
+                    "description": "The Unlicense"
+                }
+            ],
+            "datatype": "choice",
+            "defaultValue": "None",
+            "description": "The Software Package Data Exchange (SPDX) license identifier for the solution. If \"None\" is selected, the license file will not be included in the solution and the license identifier will not be included in the file header.",
+            "displayName": "License Identifier",
+            "replaces": "LICENSE-IDENTIFIER",
+            "type": "parameter"
+        },
+        "AddIcon": {
+            "datatype": "bool",
+            "defaultValue": "false",
+            "description": "Adds an icon to the project.",
+            "displayName": "Add icon (Optional)",
+            "isRequired": false,
+            "type": "parameter"
+        },
+        "DatabaseProvider": {
+            "choices": [
+                {
+                    "choice": "Sqlite",
+                    "description": "SQLite database provider for Entity Framework Core.",
+                    "displayName": "Sqlite"
+                },
+                {
+                    "choice": "SqlServerExpress",
+                    "description": "Microsoft SQL Server (Express) database provider for Entity Framework Core.",
+                    "displayName": "Sql Server Express"
+                },
+                {
+                    "choice": "SqlServerLocalDB",
+                    "description": "Microsoft SQL Server (LocalDB) database provider for Entity Framework Core.",
+                    "displayName": "Sql Server LocalDB"
+                }
+            ],
+            "datatype": "choice",
+            "defaultValue": "SqlServerLocalDB",
+            "description": "The Entity Framework Core database provider.",
+            "displayName": "Database Provider",
+            "replaces": "DATABASE-PROVIDER",
+            "type": "parameter"
+        },
+        "Database": {
+            "datatype": "string",
+            "defaultValue": "",
+            "description": "The name of the database for the application. If omitted, the solution name will be used.",
+            "displayName": "Database (Optional)",
+            "fileRename": "DatabaseName",
+            "isRequired": false,
+            "replaces": "DatabaseName",
+            "type": "parameter"
+        },
+        "DatabaseTable": {
+            "datatype": "string",
+            "defaultValue": "",
+            "description": "The name of the initial table to create in the database. If omitted, the inital database table will be named TodoItem.",
+            "displayName": "Database Table (Optional)",
+            "fileRename": "DatabaseTable",
+            "isRequired": false,
+            "replaces": "DatabaseTable",
+            "type": "parameter"
+        },
+        "AddAutoMapper": {
+            "datatype": "bool",
+            "defaultValue": "false",
+            "description": "Adds Nuget package(s)\n    AutoMapper.Extensions.Microsoft.DependencyInjection",
+            "displayName": "Add AutoMapper (Optional)",
+            "isRequired": false,
+            "type": "parameter"
+        },
+        "AddFluentValidation": {
+            "datatype": "bool",
+            "defaultValue": "false",
+            "description": "Adds Nuget package(s)\n    FluentValidation.DependencyInjectionExtensions",
+            "displayName": "Add FluentValidation (Optional)",
+            "isRequired": false,
+            "type": "parameter"
+        },
+        "AddMediatR": {
+            "datatype": "bool",
+            "defaultValue": "false",
+            "description": "Adds NuGet package(s)\n    MediatR\n    MediatR.Extensions.Microsoft.DependencyInjection",
+            "displayName": "Add MediatR (Optional)",
+            "isRequired": false,
+            "type": "parameter"
+        },
+        "UseSerilog": {
+            "datatype": "bool",
+            "defaultValue": "false",
+            "description": "Adds NuGet package(s)\n    Serilog.Enrichers.Environment\n    Serilog.Enrichers.Process\n    Serilog.Enrichers.Thread\n    Serilog.Extensions.Hosting\n    Serilog.Settings.Configuration\n    Serilog.Sinks.Console\n    Serilog.Sinks.Debug\n    Serilog.Sinks.File",
+            "displayName": "Use Serilog (Optional)",
+            "isRequired": false,
+            "type": "parameter"
+        },
+        // Non-visible Symbols
+        "CompanyIsEmpty": {
+            "type": "computed",
+            "value": "(Company == \"\")"
+        },
+        "CurrentYear": {
+            "datatype": "string",
+            "description": "Generates the current year.",
+            "generator": "now",
+            "parameters": {
+                "format": "yyyy"
+            },
+            "replaces": "CURRENT-YEAR",
+            "type": "generated"
+        },
+        "DatabaseIsEmpty": {
+            "type": "computed",
+            "value": "(Database == \"\")"
+        },
+        "DatabaseProviderIsExpress": {
+            "type": "computed",
+            "value": "(DatabaseProvider == \"SqlServerExpress\")"
+        },
+        "DatabaseProviderIsLocalDB": {
+            "type": "computed",
+            "value": "(DatabaseProvider == \"SqlServerLocalDB\""
+        },
+        "DatabaseProviderIsSqlite": {
+            "type": "computed",
+            "value": "(DatabaseProvider == \"Sqlite\")"
+        },
+        "DatabaseProviderIsSqlServer": {
+            "type": "computed",
+            "value": "(DatabaseProvider == \"SqlServerExpress\") || (DatabaseProvider == \"SqlServerLocalDB\")"
+        },
+        "DatabaseTableIsEmpty": {
+            "type": "computed",
+            "value": "(DatabaseTable == \"\")"
+        },
+        "HostIdentifier": {
+            "binding": "HostIdentifier",
+            "type": "bind"
+        },
+        "LicenseIdentifierIsEmpty": {
+            "type": "computed",
+            "value": "(LicenseIdentifier == \"None\")"
+        },
+        "SolutionName": {
+            "datatype": "string",
+            "fileRename": "SolutionName",
+            "replaces": "SolutionName",
+            "type": "derived",
+            "valueSource": "name",
+            "valueTransform": "SolutionName"
+        }
+    },
+    "tags": {
+        "language": "C#",
+        "type": "solution"
+    },
+    "thirdPartyNotices": "https://github.com/bboy77/Templates/"
+}

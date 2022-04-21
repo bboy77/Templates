@@ -1,0 +1,87 @@
+{
+    "$schema": "https://raw.githubusercontent.com/DotNetAnalyzers/StyleCopAnalyzers/master/StyleCop.Analyzers/StyleCop.Analyzers/Settings/stylecop.schema.json",
+    "settings": {
+        "documentationRules": {
+            "companyName": "COMPANY-NAME",
+            //#if (!CompanyIsEmpty && !LicenseIdentifierIsEmpty)
+            "copyrightText": "{decoration}\nSolution:  {solution}\nFile:      {fileName}\nCopyright: Copyright © {currentYear} {companyName}. All rights reserved.\nLicense:   Licensed under the {license} license. See {licenseFile} file for full license information.\n{decoration}",
+            ////#elseif (!CompanyIsEmpty && LicenseIdentifierIsEmpty)
+            //"copyrightText": "{decoration}\nSolution:  {solution}\nFile:      {fileName}\nCopyright: Copyright © {currentYear} {companyName}. All rights reserved.\n{decoration}",
+            ////#elseif (CompanyIsEmpty && !LicenseIdentifierIsEmpty)
+            //"copyrightText": "{decoration}\nSolution:  {solution}\nFile:      {fileName}\nLicense:   Licensed under the {license} license. See {licenseFile} file for full license information.\n{decoration}",
+            ////#else
+            //"copyrightText": "{decoration}\nSolution:  {solution}\nFile:      {fileName}\n{decoration}",
+            //#endif
+            "documentationCulture": "en-US",
+            "documentExposedElements": false,
+            "documentInterfaces": false,
+            "documentInternalElements": false,
+            "documentPrivateElements": false,
+            "documentPrivateFields": false,
+            "excludeFromPunctuationCheck": [
+                "seealso"
+            ],
+            "fileNamingConvention": "stylecop",
+            "headerDecoration": "---------------------------------------------------------------------------------------------------------------------",
+            "variables": {
+                "currentYear": "CURRENT-YEAR",
+                //#if (!DatabaseIsEmpty)
+                "database": "DatabaseName",
+                ////#else
+                //"database": "SolutionName",
+                //#endif
+                "decoration": "---------------------------------------------------------------------------------------------------------------------",
+                //#if (!LicenseIdentifierIsEmpty)
+                "license": "LICENSE-IDENTIFIER",
+                "licenseFile": "LICENSE",
+                //#endif
+                "solution": "SolutionName"
+            },
+            "xmlHeader": false
+        },
+        "indentation": {
+            "indentationSize": 4,
+            "tabSize": 4,
+            "useTabs": false
+        },
+        "layoutRules": {
+            "allowConsecutiveUsings": true,
+            "newlineAtEndOfFile": "allow"
+        },
+        "maintainabilityRules": {
+            "topLevelTypes": [
+                "class",
+                "delegate",
+                "enum",
+                "interface",
+                "struct"
+            ]
+        },
+        "namingRules": {
+            "allowCommonHungarianPrefixes": true,
+            "allowedHungarianPrefixes": [
+            ],
+            "allowedNamespaceComponents": [
+            ],
+            "includeInferredTupleElementNames": false,
+            "tupleElementNameCasing": "PascalCase"
+        },
+        "orderingRules": {
+            "blankLinesBetweenUsingGroups": "allow",
+            "elementOrder": [
+                "kind",
+                "accessibility",
+                "constant",
+                "static",
+                "readonly"
+            ],
+            "systemUsingDirectivesFirst": false,
+            "usingDirectivesPlacement": "outsideNamespace"
+        },
+        "readabilityRules": {
+            "allowBuiltInTypeAliases": false
+        },
+        "spacingRules": {
+        }
+    }
+}

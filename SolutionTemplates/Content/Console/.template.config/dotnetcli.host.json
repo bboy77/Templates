@@ -1,0 +1,58 @@
+{
+    "$schema": "https://json.schemastore.org/dotnetcli.host.json",
+    "symbolInfo": {
+        "Framework": {
+            "isHidden": false,
+            "longName": "framework",
+            "shortName": "f"
+        },
+        "Company": {
+            "isHidden": false,
+            "longName": "company",
+            "shortName": "c"
+        },
+        "LicenseIdentifier": {
+            "isHidden": false,
+            "longName": "license-identifier",
+            "shortName": "li"
+        },
+        "AddIcon": {
+            "isHidden": false,
+            "longName": "add-icon"
+        },
+        "DatabaseProvider": {
+            "isHidden": false,
+            "longName": "database-provider",
+            "shortName": "dbp"
+        },
+        "Database": {
+            "isHidden": false,
+            "longName": "database",
+            "shortName": "db"
+        },
+        "DatabaseTable": {
+            "isHidden": false,
+            "longName": "database-table",
+            "shortName": "dbt"
+        },
+        "AddAutoMapper": {
+            "isHidden": false,
+            "longName": "add-automapper"
+        },
+        "AddFluentValidation": {
+            "isHidden": false,
+            "longName": "add-fluentvalidation"
+        },
+        "AddMediatR": {
+            "isHidden": false,
+            "longName": "add-mediatr"
+        },
+        "UseSerilog": {
+            "isHidden": false,
+            "longName": "use-serilog"
+        }
+    },
+    "usageExamples": [
+        ""
+    ]
+}

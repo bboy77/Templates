@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+    <metadata>
+        <authors>Aeb Solutions,Andrew E. Bish,bboy77</authors>
+        <copyright>© Aeb Solutions. All rights reserved.</copyright>
+        <description>
+            Solution templates for the .NET command-line interface and Visual Studio.
+            Features:
+            • Dependency Injection
+            • Generic Host
+            • StyleCop configuration file
+            • .editorconfig file
+            • Batch file that creates an initial migration and database using the selected provider.
+			• appsettings.json
+            • LICENSE file for the solution (Optional)
+            • Logging
+                - Generic Host
+                - Serilog (Optional)
+            • Data Access with Entity Framework Core
+                - SQL Server Express LocalDB
+                - SQL Server Express
+                - Sqlite
+            • AutoMapper (Optional)
+            • FluentValidation (Optional)
+            • MediatR (Optional)
+        </description>
+        <icon>Icon.png</icon>
+        <id>AebSolutions.CodeConvention.SolutionTemplates</id>
+        <language>en-US</language>
+        <license type="expression">MIT</license>
+        <owners>bboy77</owners>
+        <packageTypes>
+            <packageType name="Template" />
+        </packageTypes>
+        <projectUrl>https://github.com/bboy77/Templates/</projectUrl>
+        <readme>README.md</readme>
+        <releaseNotes>https://github.com/bboy77/Templates/</releaseNotes>
+        <repository branch="main" type="git" url="https://github.com/bboy77/Templates" />
+        <requireLicenseAcceptance>true</requireLicenseAcceptance>
+        <serviceable>true</serviceable>
+        <summary>
+            Solution templates for the .NET command-line interface and Visual Studio.
+            Features:
+            • Dependency Injection
+            • Generic Host
+            • StyleCop configuration file
+            • .editorconfig file
+            • Batch file that creates an initial migration and database using the selected provider.
+			• appsettings.json
+            • LICENSE file for the solution (Optional)
+            • Logging
+            - Generic Host
+            - Serilog (Optional)
+            • Data Access with Entity Framework Core
+            - SQL Server Express LocalDB
+            - SQL Server Express
+            - Sqlite
+            • AutoMapper (Optional)
+            • FluentValidation (Optional)
+            • MediatR (Optional)
+        </summary>
+        <tags>
+            aebsolutions codeconvention solution template templates efcore aspnetcore EntityFrameworkCore Core Entity asp.net mediator mapping logging hosting
+        </tags>
+        <title>Aeb Solutions Code Convention Solution Templates</title>
+        <version>6.4.0</version>
+    </metadata>
+    <files>
+        <file exclude="**/*.txt;**/*.user;**/.vs/**/*;**/bin/**/*;**/obj/**/*" src="Content/" target="Content" />
+        <file src="Icon.png" target="Icon.png" />
+        <file src="README.md" target="README.md" />
+    </files>
+</package>

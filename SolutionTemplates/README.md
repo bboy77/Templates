@@ -1,10 +1,10 @@
-# ![Code Convention Templates](/Assets/github-image32x32.png) Code Convention Templates
+# ![](/Assets/github-image32x32.png) Code Convention Templates
 
 Solution templates for the .NET command-line interface and `Visual Studio`.
 
 These templates are for those who are familiar with Dependency Injection, Hosting, EFCore SQL Server and Sqlite.
 
-## ![Solution Templates](/Assets/github-image16x16.png) Solution Templates
+## ![](/Assets/github-image16x16.png) Solution Templates
 * [Console](/SolutionTemplates/Content/Console/)
 * [Desktop](/SolutionTemplates/Content/Desktop/)
   *  [WinForms](/SolutionTemplates/Content/Desktop/WinForms/)

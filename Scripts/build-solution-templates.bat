@@ -9,7 +9,7 @@ REM ----------------------------------------------------------------------------
 CLS
 RMDIR /S /Q %LOCALAPPDATA%\Microsoft\VisualStudio\17.0_f1c6002e\TemplateEngineHost\vs\
 DEL /A:H /Q "%LOCALAPPDATA%\Microsoft\VisualStudio\17.0_f1c6002e\ProjectTemplatesCache_{00000000-0000-0000-0000-000000000000}\cache.bin"
-nuget pack ../SolutionTemplates/AebSolutions.CodeConvention.SolutionTemplates.6.4.0.nuspec -NoDefaultExcludes -OutputDirectory ../Packages/
+nuget pack ../SolutionTemplates/AebSolutions.CodeConvention.SolutionTemplates.6.5.0.nuspec -NoDefaultExcludes -OutputDirectory ../Packages/
 dotnet new --uninstall AebSolutions.CodeConvention.SolutionTemplates
-dotnet new --install ../Packages/AebSolutions.CodeConvention.SolutionTemplates.6.4.0.nupkg
+dotnet new --install ../Packages/AebSolutions.CodeConvention.SolutionTemplates.6.5.0.nupkg
 PAUSE

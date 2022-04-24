@@ -1,0 +1,48 @@
+{
+	"$schema": "http://json.schemastore.org/vs-2017.3.host",
+	"icon": "Icon.png",
+	"learnMoreLink": "https://github.com/bboy77/Templates/",
+	"order": 0,
+	"symbolInfo": [
+		{
+			"id": "Company",
+			"isVisible": true
+		},
+				{
+			"id": "LicenseIdentifier",
+			"isVisible": true
+		},
+		{
+			"id": "AddIcon",
+            "isVisible": true
+		},
+		{
+			"id": "DatabaseProvider",
+			"isVisible": true
+		},
+		{
+			"id": "Database",
+			"isVisible": true
+		},
+		{
+			"id": "DatabaseTable",
+			"isVisible": true
+		},
+		{
+			"id": "AddAutoMapper",
+            "isVisible": true
+        },
+        {
+            "id": "AddFluentValidation",
+            "isVisible": true
+        },
+        {
+            "id": "AddMediatR",
+            "isVisible": true
+        },
+        {
+            "id": "UseSerilog",
+            "isVisible": true
+        }
+	]
+}

@@ -1,0 +1,76 @@
+{
+    "$schema": "https://json.schemastore.org/dotnetcli.host.json",
+    "symbolInfo": {
+		// visible
+		"Framework": {
+            "isHidden": false,
+            "longName": "framework",
+            "shortName": "f"
+        },
+        "Company": {
+            "isHidden": false,
+            "longName": "company",
+            "shortName": "c"
+        },
+		"LicenseIdentifier": {
+            "isHidden": false,
+            "longName": "license-identifier",
+            "shortName": "li"
+        },
+		"AddIcon": {
+            "isHidden": false,
+            "longName": "add-icon",
+            "shortName": "ai"
+        },
+		"DatabaseProvider": {
+            "isHidden": false,
+            "longName": "database-provider",
+            "shortName": "dbp"
+        },
+        "Database": {
+            "isHidden": false,
+            "longName": "database",
+            "shortName": "db"
+        },
+        "DatabaseTable": {
+            "isHidden": false,
+            "longName": "database-table",
+            "shortName": "dbt"
+        },
+        "AddAutoMapper": {
+            "isHidden": false,
+            "longName": "add-automapper"
+        },
+        "AddBogus": {
+            "isHidden": false,
+            "longName": "add-bogus"
+        }, 
+        "AddFluentValidation": {
+            "isHidden": false,
+            "longName": "add-fluentvalidation"
+        },
+        "AddMediatR": {
+            "isHidden": false,
+            "longName": "add-mediatr"
+        },
+        "UseSerilog": {
+            "longName": "use-serilog"
+        },
+		// non-visible
+		"IISHttpPort": {
+            "isHidden": true
+        },
+        "IISHttpsPort": {
+            "isHidden": true
+        }, 
+        "KestrelHttpPort": {
+            "isHidden": true
+        },
+        "KestrelHttpsPort": {
+            "isHidden": true
+        }
+    },
+    "usageExamples": [
+        ""
+    ]
+}

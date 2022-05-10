@@ -59,7 +59,8 @@
             "modifiers": [
                 {
                     "rename": {
-                        "create-database.cs": "create-database.bat"
+                        "create-database.cs": "create-database.bat",
+                        "create-scripts.cs": "create-scripts.bat" 
                     }
                 },
                 {

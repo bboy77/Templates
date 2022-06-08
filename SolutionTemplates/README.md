@@ -21,7 +21,7 @@ Optional features will not be added unless selected. See individual templates fo
 * Generic Host
 * Logging
   * Generic Host
-  * Serilog
+  * Serilog (Optional)
     * Serilog
 * Files
   * .editor.config

@@ -10,7 +10,7 @@ Solution templates for the .NET command-line interface and `Visual Studio`.
 * [Web](/SolutionTemplates/Content/Web/)
   * [Razor Pages](/SolutionTemplates/Content/Web/RazorPages)
   * [Web API](/SolutionTemplates/Content/Web/WebApi)
-* [Multi Project](https://github.com/bboy77/Templates/tree/main/SolutionTemplates/Content/Multi-Project)
+* [Multi Project](https://github.com/bboy77/Templates/tree/main/SolutionTemplates/Content/Multi-Project/)
 
 ## ![](/Assets/github-image16x16.png) Features
 The following features are available for all solution templates, and have default configurations.

@@ -15,7 +15,7 @@ These templates are for those who are familiar with Dependency Injection, Hostin
 * [Multi Project](https://github.com/bboy77/Templates/tree/main/SolutionTemplates/Content/Multi-Project)
 
 
-## ![Features](/Assets/github-image16x16.png) Features
+## ![](/Assets/github-image16x16.png) Features
 The following features are available for all solution templates, and have default configurations.
 * Dependency Injection
 * Generic Host

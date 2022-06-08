@@ -17,8 +17,10 @@ Solution templates for the .NET command-line interface and `Visual Studio`.
 * Logging
   * Generic Host
   * Serilog (Optional)
-* StyleCop configuration file
-* .editorconfig
+* Files
+  * .editor.config
+  * stylecop.json
+  * 
 * create-database.bat: Creates an initial migration and database using the selected provider.
 * appsettings.json
 * LICENSE file for the solution (Optional)

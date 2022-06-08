@@ -4,7 +4,7 @@ Solution templates for the .NET command-line interface and `Visual Studio`.
 
 ## ![](/Assets/github-image16x16.png) Solution Templates
 * [Console](https://github.com/bboy77/Templates/tree/main/SolutionTemplates/Content/Console)
-* [Desktop](https://github.com/bboy77/Templates/tree/main/SolutionTemplates/Content/Desktop))
+* [Desktop](https://github.com/bboy77/Templates/tree/main/SolutionTemplates/Content/Desktop)
 * [Web](/SolutionTemplates/Content/Web/)
 * [Multi Project](https://github.com/bboy77/Templates/tree/main/SolutionTemplates/Content/Multi-Project/)
 

@@ -22,6 +22,9 @@ namespace MultiProjectApplicationEx.Data.DataGenerators;
 
 public static class TodoItemGenerator
 {
+    /// <summary>
+    /// Generates data using the Bogus library. If data exists, no data will be generated.
+    /// </summary>
     public static async void Generate(this IHost host, int count)
     {
         using var scope = host.Services.CreateScope();

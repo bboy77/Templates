@@ -1,0 +1,61 @@
+/* styles used for the custom card classes in the solution */
+
+.card {
+    border-radius: .5rem;
+    box-shadow: 0 .125rem .125rem var(--vs-bg);
+    margin: auto;
+    overflow: hidden;
+}
+
+.card-footer, .card-header {
+    background-color: var(--vs-fg);
+    border: 0;
+    color: var(--vs-bg);
+    display: flex;
+}
+
+.card-footer {
+    justify-content: end;
+    gap: .5rem;
+}
+
+    .card-footer button {
+        align-items: center;
+        display: flex;
+        gap: .5rem;
+        padding: .5rem .75rem;
+    }
+
+        .card-footer button svg, .card-footer a svg {
+            height: 1rem;
+            width: 1rem;
+        }
+
+.card-header span, .card-header svg {
+    margin: auto;
+}
+
+.card-header svg {
+    height: 1rem;
+    width: 1rem;
+}
+
+.card-title {
+    display: flex;
+    gap: .25rem;
+    margin: auto;
+}
+
+    .card-title span, .card-title svg {
+        margin: auto;
+    }
+
+    .card-title span {
+        font-size: 1.25rem;
+        font-weight: 500;
+    }
+
+    .card-title svg {
+        height: 1.5rem;
+        width: 1.5rem;
+    }

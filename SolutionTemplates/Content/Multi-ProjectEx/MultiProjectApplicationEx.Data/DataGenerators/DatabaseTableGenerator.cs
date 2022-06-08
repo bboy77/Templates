@@ -22,6 +22,9 @@ namespace MultiProjectApplicationEx.Data.DataGenerators;
 
 public static class DatabaseTableGenerator
 {
+    /// <summary>
+    /// Generates data using the Bogus library. If data exists, no data will be generated.
+    /// </summary>
     public static async void Generate(this IHost host, int count)
     {
         using var scope = host.Services.CreateScope();
@@ -47,8 +50,6 @@ public static class DatabaseTableGenerator
         var faker = new Faker<DatabaseTable>()
             .RuleFor(x => x.Description, f => f.Lorem.Sentence(5))
             .RuleFor(x => x.Name, f => f.Company.CompanyName())
-            .RuleFor(x => x.Url, f => f.Internet.Url())
-            .RuleFor(x => x.UserName, f => f.Internet.UserName())
             .Generate(count)
             .ToList();
 

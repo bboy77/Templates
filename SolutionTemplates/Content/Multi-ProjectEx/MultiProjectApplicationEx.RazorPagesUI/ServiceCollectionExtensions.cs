@@ -17,9 +17,6 @@ using FluentValidation;
 #if (AddMediatR)
 using MediatR;
 #endif
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
 
 namespace MultiProjectApplicationEx.RazorPagesUI;
 

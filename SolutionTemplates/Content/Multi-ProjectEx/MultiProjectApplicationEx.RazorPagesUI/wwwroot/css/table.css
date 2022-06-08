@@ -1,0 +1,22 @@
+/* styles used for the custom table in the solution */
+
+td {
+    max-width: 10rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+tbody tr:hover {
+    background-color: hsl(0, 0%, 98%);
+}
+
+.td-links {
+    display: flex;
+    gap: .5rem;
+    justify-content: end;
+}
+
+.td-links a {
+    text-decoration: none;
+}

@@ -1,4 +1,15 @@
-﻿using Microsoft.AspNetCore.Mvc;
+// ---------------------------------------------------------------------------------------------------------------------
+// Solution:  SolutionName
+// File:      Privacy.cshtml.cs
+#if (!CompanyIsEmpty)
+// Copyright: Copyright © CURRENT-YEAR COMPANY-NAME. All rights reserved.
+#endif
+#if (!LicenseIdentifierIsEmpty)
+// License:   Licensed under the LICENSE-IDENTIFIER license. See LICENSE file for full license information.
+#endif
+// ---------------------------------------------------------------------------------------------------------------------
+
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace MultiProjectApplicationEx.RazorPagesUI.Pages;
@@ -16,4 +27,3 @@ public class PrivacyModel : PageModel
     {
     }
 }
-

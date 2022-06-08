@@ -94,7 +94,8 @@
                     "exclude": [
                         "MultiProjectApplicationEx.Data/Entities/DatabaseTable.cs",
                         "MultiProjectApplicationEx.Data/Configurations/DatabaseTableConfiguration.cs",
-                        "MultiProjectApplicationEx.Data/DataGenerators/DatabaseTableGenerator.cs"
+                        "MultiProjectApplicationEx.Data/DataGenerators/DatabaseTableGenerator.cs",
+                        "MultiProjectApplicationEx.RazorPagesUI/Pages/DatabaseTables/**"
                     ]
                 },
                 {
@@ -102,7 +103,8 @@
                     "exclude": [
                         "MultiProjectApplicationEx.Data/Entities/TodoItem.cs",
                         "MultiProjectApplicationEx.Data/Configurations/TodoItemConfiguration.cs",
-                        "MultiProjectApplicationEx.Data/DataGenerators/TodoItemGenerator.cs"
+                        "MultiProjectApplicationEx.Data/DataGenerators/TodoItemGenerator.cs",
+                        "MultiProjectApplicationEx.RazorPagesUI/Pages/TodoItems/**"
                     ]
                 },
                 {
@@ -292,7 +294,7 @@
         "DatabaseTable": {
             "datatype": "string",
             "defaultValue": "Account",
-            "description": "The name of the initial table to create in the database. If omitted, the inital database table will be named TodoItem.",
+            "description": "The name of the initial table to create in the database.\n    This first table name should be singular.\n    If omitted, the inital database table will be named TodoItem.",
             "displayName": "Database Table (Optional)",
             "fileRename": "DatabaseTable",
             "isRequired": false,
@@ -314,7 +316,7 @@
             "displayName": "Add Bogus (Optional)",
             "isRequired": false,
             "type": "parameter"
-        }, 
+        },
         "AddFluentValidation": {
             "datatype": "bool",
             "defaultValue": "true",

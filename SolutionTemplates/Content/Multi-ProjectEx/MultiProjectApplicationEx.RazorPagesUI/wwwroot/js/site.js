@@ -1,4 +1,11 @@
-﻿// Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-// for details on configuring this project to bundle and minify static web assets.
+$(document).ready(function () {
+    setActive();
+});
 
-// Write your JavaScript code.
+function setActive() {
+    document.querySelectorAll(".nav-link").forEach(link => {
+        if (location.href === link.href || location.href.includes(link.href + "/")) {
+            link.classList.add("active");
+        }
+    });
+}

@@ -1,0 +1,44 @@
+@page
+@model MultiProjectApplicationEx.RazorPagesUI.Pages.DatabaseTables.CreateModel
+
+@{
+    ViewData["Title"] = "Create DatabaseTable";
+}
+
+<div class="card col-lg-10">
+    <div class="card-header">
+        <div class="card-title">
+            <svg><use xlink:href="#AddRow"></use></svg>
+            <span>Create DatabaseTable</span>
+        </div>
+    </div>
+    <div class="card-body">
+        <form method="post" id="CreateForm">
+            <div asp-validation-summary="ModelOnly"></div>
+            <div class="form-group required">
+                <label asp-for="DatabaseTable.Name" class="control-label"></label>
+                <input asp-for="DatabaseTable.Name" class="form-control" />
+                <span asp-validation-for="DatabaseTable.Name"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DatabaseTable.Description" class="control-label"></label>
+                <textarea asp-for="DatabaseTable.Description" class="form-control" rows="5"></textarea>
+                <span asp-validation-for="DatabaseTable.Description"></span>
+            </div>
+        </form>
+    </div>
+    <div class="card-footer">
+        <button type="submit" class="btn btn-create" form="CreateForm">
+            <svg><use xlink:href="#AddRowButton"></use></svg>
+            <span>Create</span>
+        </button>
+        <a asp-page="./Index" class="btn btn-back">
+            <svg><use xlink:href="#BackToResultList"></use></svg>
+            <span>Back to DatabaseTables</span>
+        </a>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

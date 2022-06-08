@@ -9,8 +9,6 @@
 #endif
 // ---------------------------------------------------------------------------------------------------------------------
 
-using System;
-
 namespace MultiProjectApplicationEx.Data.Entities;
 
 public class DatabaseTable
@@ -18,10 +16,6 @@ public class DatabaseTable
     public int Id { get; set; }
 
     public string Name { get; set; } = null!;
-
-    public string UserName { get; set; } = null!;
-
-    public string Url { get; set; } = null!;
 
     public string? Description { get; set; }
 }

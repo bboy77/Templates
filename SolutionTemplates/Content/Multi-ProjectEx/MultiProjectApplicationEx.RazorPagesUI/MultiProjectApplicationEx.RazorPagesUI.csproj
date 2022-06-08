@@ -42,7 +42,7 @@
     </ItemGroup>
 
     <ItemGroup Label="Project References">
-      <ProjectReference Include="..\MultiProjectApplicationEx.Data\MultiProjectApplicationEx.Data.csproj" />
+        <ProjectReference Include="..\MultiProjectApplicationEx.Data\MultiProjectApplicationEx.Data.csproj" />
     </ItemGroup>
 
 </Project>

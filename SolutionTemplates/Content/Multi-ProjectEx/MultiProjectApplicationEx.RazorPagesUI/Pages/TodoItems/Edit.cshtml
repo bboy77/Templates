@@ -1,0 +1,47 @@
+@page
+@model MultiProjectApplicationEx.RazorPagesUI.Pages.TodoItems.EditModel
+
+@{
+    ViewData["Title"] = "Edit TodoItem";
+}
+
+<div class="card col-lg-10">
+    <div class="card-header">
+        <div class="card-title">
+            <svg><use xlink:href="#EditDatabase"></use></svg>
+            <span>Edit TodoItem</span>
+        </div>
+    </div>
+    <div class="card-body">
+        <form method="post" id="EditForm">
+            <div asp-validation-summary="ModelOnly"></div>
+            <input type="hidden" asp-for="TodoItem.Id" />
+            <div class="form-group required">
+                <label asp-for="TodoItem.Name" class="control-label"></label>
+                <input asp-for="TodoItem.Name" class="form-control" />
+                <span asp-validation-for="TodoItem.Name"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TodoItem.Description" class="control-label"></label>
+                <textarea asp-for="TodoItem.Description" class="form-control" rows="5"></textarea>
+                <span asp-validation-for="TodoItem.Description"></span>
+            </div>
+        </form>
+    </div>
+    <div class="card-footer">
+        <button type="submit" class="btn btn-edit" form="EditForm">
+            <svg><use xlink:href="#Save"></use></svg>
+            <span>Save</span>
+        </button>
+        <a asp-page="./Index" class="btn btn-back">
+            <svg><use xlink:href="#BackToResultList"></use></svg>
+            <span>Back to TodoItems</span>
+        </a>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    }

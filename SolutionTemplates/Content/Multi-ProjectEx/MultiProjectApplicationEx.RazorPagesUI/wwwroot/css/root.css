@@ -1,0 +1,27 @@
+/* Visual Studio color palette with additional custom colors */
+
+:root {
+    --vs-bg: hsl(0, 0%, 26%);
+    --vs-bg-dark: hsl(0, 0%, 16%);
+    --vs-fg: hsl(270, 7%, 94%);
+    --vs-out: hsl(0, 0%, 96%);
+    --vs-action-green: hsl(117, 45%, 37%);
+    --vs-action-red: hsl(10, 85%, 34%);
+    --vs-action-blue: hsl(208, 100%, 31%);
+    --vs-action-orange: hsl(35, 76%, 43%);
+    --vs-action-purple: hsl(274, 52%, 37%);
+    --folder: hsl(37, 58%, 67%);
+    --asp-blue: hsl(198, 100%, 42%);
+    --cpp-purple: hsl(304, 32%, 46%);
+    --cs-green: hsl(117, 45%, 37%);
+    --css-red: hsl(354, 73%, 43%);
+    --fs-purple: hsl(287, 50%, 31%);
+    --js-orange: hsl(19, 88%, 54%);
+    --vb-blue: hsl(208, 100%, 31%);
+    --ts-orange: hsl(19, 95%, 45%);
+    --py-green: hsl(69, 47%, 40%);
+    --vs-blue: hsl(200, 79%, 50%);
+    --vs-green: hsl(120, 50%, 40%);
+    --vs-red: hsl(5, 100%, 45%);
+    --vs-orange: hsl(48, 100%, 50%);
+}

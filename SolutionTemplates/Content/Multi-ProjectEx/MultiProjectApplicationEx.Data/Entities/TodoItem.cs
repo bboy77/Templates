@@ -9,8 +9,6 @@
 #endif
 // ---------------------------------------------------------------------------------------------------------------------
 
-using System;
-
 namespace MultiProjectApplicationEx.Data.Entities;
 
 public class TodoItem
@@ -20,6 +18,4 @@ public class TodoItem
     public string Name { get; set; } = null!;
 
     public string? Description { get; set; }
-
-    public DateTime DateCreated { get; set; }
 }

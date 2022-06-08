@@ -25,10 +25,6 @@ public class DatabaseTableConfiguration : IEntityTypeConfiguration<DatabaseTable
 
         builder.Property(e => e.Name).HasMaxLength(50).IsRequired();
 
-        builder.Property(e => e.UserName).HasMaxLength(50);
-
-        builder.Property(e => e.Url).HasMaxLength(50);
-
         builder.Property(e => e.Description).HasMaxLength(255).IsRequired(false);
     }
 }

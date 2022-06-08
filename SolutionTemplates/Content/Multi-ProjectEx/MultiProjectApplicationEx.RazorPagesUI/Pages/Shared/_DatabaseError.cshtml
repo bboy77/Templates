@@ -1,0 +1,12 @@
+<div class="database-error-page">
+    <svg><use xlink:href="#DatabaseOffline"></use></svg>
+    <h1 class="display-4">Database Offline</h1>
+    <p>
+        @*#if (DatabaseIsEmpty)
+        Close the browser, stop debugging, and run create-database.bat located in the solution root directory to create the SolutionName database.
+        #else
+        Close the browser, stop debugging, and run create-database.bat located in the solution root directory to create the DatabaseName database.
+        #endif*@
+        For more information on the dotnet ef commands used, click <a href="https://docs.microsoft.com/en-us/ef/core/cli/dotnet">here</a>.
+    </p>
+</div>

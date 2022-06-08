@@ -1,0 +1,35 @@
+<div class="database-warning-page">
+    <svg><use xlink:href="#StatusWarning"></use></svg>
+    <h1 class="display-4">No Data</h1>
+    @*#if (DatabaseTableIsEmpty && AddBogus)
+    <p>
+    To create a new TodoItem click the Create TodoItem button or uncomment and run the
+    app.Generate() method loacated in Program.cs. The app.Generate() method generates data using the
+    <a href="https://www.nuget.org/packages/Bogus/">Bogus</a> library.
+    </p>
+    #elseif (DatabaseTableIsEmpty && !AddBogus)
+    <p>
+    To create a new TodoItem click the Create TodoItem button.
+    </p>
+    #elseif (!DatabaseTableIsEmpty && AddBogus)
+    <p>
+    To create a new DatabaseTable click the Create DatabaseTable button or uncomment and run the
+    app.Generate() method loacated in Program.cs. The app.Generate() method generates data using the
+    <a href="https://www.nuget.org/packages/Bogus/">Bogus</a> library.
+    </p>
+    #else
+    <p>
+    To create a new DatabaseTable click the Create DatabaseTable button.
+    </p>
+    #endif*@
+</div>
+<div class="database-warning-page-button">
+    <a asp-page="./Create" class="btn btn-create">
+        <svg><use xlink:href="#AddRowButton"></use></svg>
+        @*#if (DatabaseTableIsEmpty)
+        <span>Create TodoItem</span>
+        #else
+        <span>Create DatabaseTable</span>
+        #endif*@
+    </a>
+</div>

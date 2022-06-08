@@ -1,0 +1,65 @@
+@page
+@model MultiProjectApplicationEx.RazorPagesUI.Pages.TodoItems.IndexModel
+@{
+    ViewData["Title"] = "TodoItems";
+}
+
+@if (!Model.DatabaseCreated)
+{
+    ViewData["Title"] = "Database Offline";
+    <partial name="Shared/_DatabaseError" />
+    return;
+}
+
+@if (!Model.TodoItems!.Any())
+{
+    ViewData["Title"] = "No Data";
+    <partial name="Shared/_DatabaseWarning" />
+}
+else
+{
+    <div class="card">
+        <div class="card-header">
+            <div class="card-title">
+                <svg><use xlink:href="#Table"></use></svg>
+                <span>TodoItems</span>
+            </div>
+            <a asp-page="./Create" class="btn btn-create">
+                <svg><use xlink:href="#AddRowButton"></use></svg>
+                <span>Create TodoItem</span>
+            </a>
+        </div>
+        <div class="card-body" style="overflow: auto;">
+            <table class="table table-responsive">
+                <thead>
+                    <tr>
+                        <th>@Html.DisplayNameFor(model => model.TodoItems[0].Name)</th>
+                        <th>@Html.DisplayNameFor(model => model.TodoItems[0].Description)</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var todoItem in Model.TodoItems)
+                    {
+                        <tr>
+                            <td>@Html.DisplayFor(model => todoItem.Name)</td>
+                            <td>@Html.DisplayFor(model => todoItem.Description)</td>
+                            <td>
+                                <div class="td-links">
+                                    <a asp-page="./Edit" asp-route-id="@todoItem.Id">Edit</a>
+                                    <a asp-page="./Details" asp-route-id="@todoItem.Id">Details</a>
+                                    <a asp-page="./Delete" asp-route-id="@todoItem.Id">Delete</a>
+                                </div>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+        <div class="card-footer">
+            <div class="float-end text-muted">
+                <span>Total TodoItems: @Model.TodoItems.Count</span>
+            </div>
+        </div>
+    </div>
+}   

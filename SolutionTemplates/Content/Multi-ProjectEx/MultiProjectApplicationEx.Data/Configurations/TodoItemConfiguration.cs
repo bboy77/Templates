@@ -26,13 +26,5 @@ public class TodoItemConfiguration : IEntityTypeConfiguration<TodoItem>
         builder.Property(e => e.Name).HasMaxLength(50).IsRequired();
 
         builder.Property(e => e.Description).HasMaxLength(255).IsRequired(false);
-
-#if (DatabaseProviderIsSqlite)
-        builder.Property(e => e.DateCreated)
-            .HasColumnType("TIMESTAMP DATETIME")
-            .HasDefaultValueSql("strftime('%Y-%m-%dT%H:%M:%S', 'now')");
-#else
-        builder.Property(e => e.DateCreated).HasDefaultValueSql("GETDATE()");
-#endif
     }
 }

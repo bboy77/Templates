@@ -9,10 +9,10 @@
 #endif
 // ---------------------------------------------------------------------------------------------------------------------
 
-using MultiProjectApplicationEx.RazorPagesUI;
 #if (AddBogus)
 using MultiProjectApplicationEx.Data.DataGenerators;
 #endif
+using MultiProjectApplicationEx.RazorPagesUI;
 #if (UseSerilog)
 using Serilog;
 #endif
@@ -51,10 +51,10 @@ app.UseRouting();
 app.UseAuthorization();
 
 app.MapRazorPages();
-
 #if (AddBogus)
 // Uncomment to generate initial data
 // app.Generate(10);
 #endif
+
 // Run
 app.Run();

@@ -1,0 +1,83 @@
+@page
+@model MultiProjectApplicationEx.RazorPagesUI.Pages.AboutModel
+@{
+    ViewData["Title"] = "About SolutionName";
+}
+
+<div class="about-page">
+    <svg><use xlink:href="#Application"></use></svg>
+    <h1 class="display-4">@ViewData["Title"]</h1>
+    <dl class="row">
+        <dd>
+            <hr />
+        </dd>
+
+        <dt class="col-sm-3">
+            @Html.DisplayNameFor(model => model.SolutionInformation!.Company)
+        </dt>
+        <dd class="col-sm-9">
+            @Html.DisplayFor(model => model.SolutionInformation!.Company)
+        </dd>
+
+        <dt class="col-sm-3">
+            @Html.DisplayNameFor(model => model.SolutionInformation!.ConnectionString)
+        </dt>
+        <dd class="col-sm-9">
+            @Html.DisplayFor(model => model.SolutionInformation!.ConnectionString)
+        </dd>
+
+        <dt class="col-sm-3">
+            @Html.DisplayNameFor(model => model.SolutionInformation!.Database)
+        </dt>
+        <dd class="col-sm-9">
+            @Html.DisplayFor(model => model.SolutionInformation!.Database)
+        </dd>
+
+        <dt class="col-sm-3">
+            @Html.DisplayNameFor(model => model.SolutionInformation!.DatabaseProvider)
+        </dt>
+        <dd class="col-sm-9">
+            @Html.DisplayFor(model => model.SolutionInformation!.DatabaseProvider)
+        </dd>
+
+        <dt class="col-sm-3">
+            @Html.DisplayNameFor(model => model.SolutionInformation!.DatabaseCreated)
+        </dt>
+        <dd class="col-sm-9">
+            @Html.DisplayFor(model => model.SolutionInformation!.DatabaseCreated)
+        </dd>
+
+        <dt class="col-sm-3">
+            @Html.DisplayNameFor(model => model.SolutionInformation!.DatabaseHasData)
+        </dt>
+        <dd class="col-sm-9">
+            @Html.DisplayFor(model => model.SolutionInformation!.DatabaseHasData)
+        </dd>
+
+        <dt class="col-sm-3">
+            @Html.DisplayNameFor(model => model.SolutionInformation!.License)
+        </dt>
+        <dd class="col-sm-9">
+            @Html.DisplayFor(model => model.SolutionInformation!.License)
+        </dd>
+
+        <dt class="col-sm-3">
+            @Html.DisplayNameFor(model => model.SolutionInformation!.Name)
+        </dt>
+        <dd class="col-sm-9">
+            @Html.DisplayFor(model => model.SolutionInformation!.Name)
+        </dd>
+
+        <dd>
+            <hr />
+            <div class="about-page-button">
+                <a asp-page="./Index" class="btn btn-back">
+                    <svg><use xlink:href="#Back"></use></svg>
+                    <span>Back to Home</span>
+                </a>
+            </div>
+        </dd>
+
+    </dl>
+
+</div>

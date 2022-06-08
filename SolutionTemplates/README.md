@@ -35,6 +35,7 @@ Optional features will not be added unless selected.
   * [Bogus](https://www.nuget.org/packages/Bogus/) (Optional)
   * FluentValidation (Optional)
   * [FluentValidation.AspNetCore](https://www.nuget.org/packages/FluentValidation.AspNetCore/) (Optional)
+  * [FluentValidation.DependencyInjectionExtensions](https://www.nuget.org/packages/FluentValidation.DependencyInjectionExtensions/) (Optional)
   * MediatR (Optional)
 
 <!-- Requirements -->

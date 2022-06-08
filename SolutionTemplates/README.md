@@ -27,6 +27,7 @@ Solution templates for the .NET command-line interface and `Visual Studio`.
   * create-database.bat
   * LICENSE (Optional)
   * stylecop.json
+  
 * NuGet Packages<br />If selected, the following packages will be added to the solution.
   * [AutoMapper]() AutoMapper (Optional)
   * [Bogus](https://www.nuget.org/packages/Bogus/) (Optional)

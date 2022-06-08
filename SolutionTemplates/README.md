@@ -35,9 +35,9 @@ Solution templates for the .NET command-line interface and `Visual Studio`.
 
 <!-- Requirements -->
 ## ![Requirements](/Assets/github-image16x16.png) Requirements
-* [Visual Studio 2022](https://visualstudio.microsoft.com/launch/) version 17.0 and above
+* [Visual Studio 2022](https://visualstudio.microsoft.com/launch/)
 * [.NET 6.0](https://dotnet.microsoft.com/download/dotnet/6.0)
-* [Entity Framework Core tools for .NET Core CLI](https://docs.microsoft.com/en-us/ef/core/cli/dotnet) verion 6.0.5 and above
+* [Entity Framework Core tools for .NET Core CLI](https://docs.microsoft.com/en-us/ef/core/cli/dotnet)
 * [SQL Server Express](https://www.microsoft.com/en-us/sql-server/sql-server-downloads)
 
 <!-- Instalation -->

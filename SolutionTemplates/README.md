@@ -1,63 +1,79 @@
+<!-- Header -->
 # ![](/Assets/github-image32x32.png) Code Convention Templates
-
 Solution templates for the .NET command-line interface and `Visual Studio`.
 
-These templates are for those who are familiar with Dependency Injection, Hosting, EFCore SQL Server and Sqlite.
-
+<!-- Solution Templates -->
 ## ![](/Assets/github-image16x16.png) Solution Templates
-* [Console](/SolutionTemplates/Content/Console/)
-* [Desktop](/SolutionTemplates/Content/Desktop/)
-  *  [WinForms](/SolutionTemplates/Content/Desktop/WinForms/)
-  *  [WPF](/SolutionTemplates/Content/Desktop/WPF/)
-* [Web](/SolutionTemplates/Content/Web/)
-  * [Razor Pages](/SolutionTemplates/Content/Web/RazorPages)
-  * [Web API](/SolutionTemplates/Content/Web/WebApi)
+* [Console](https://github.com/bboy77/Templates/tree/main/SolutionTemplates/Content/Console/)
+* [Desktop](https://github.com/bboy77/Templates/tree/main/SolutionTemplates/Content/Desktop/)
+* [Web](https://github.com/bboy77/Templates/tree/main/SolutionTemplates/Content/Web/)
+* [Multi Project](https://github.com/bboy77/Templates/tree/main/SolutionTemplates/Content/Multi-Project/)
+* [Multi Project Ex](https://github.com/bboy77/Templates/tree/main/SolutionTemplates/Content/Multi-ProjectEx/)
 
-## ![Features](/Assets/github-image16x16.png) Features
-The following features are available for all solution templates, and have default configurations.
+<!-- Features -->
+## ![](/Assets/github-image16x16.png) Features
+Optional features will not be added unless selected. See individual templates for optional packages that are available.
+* [Database Providers (Entity Framework Core)](https://docs.microsoft.com/en-us/ef/core/providers/?tabs=dotnet-core-cli)
+  * Sqlite
+  * Sql Server Express
+  * Sql Server LocalDB
 * Dependency Injection
 * Generic Host
-* StyleCop configuration file
-* .editorconfig
-* create-database.bat: Creates an initial migration and database using the selected provider.
-* appsettings.json
-* LICENSE file for the solution (Optional)
 * Logging
   * Generic Host
-  * Serilog (Optional)\
-    If selected, see appsettings.json for initial configuration.
-* Data Access with Entity Framework Core
-  * SQL Server Express LocalDB
-  * SQL Server Express
-  * Sqlite
-* AutoMapper (Optional)
-* FluentValidation (Optional)
-* MediatR (Optional)
+  * Serilog (Optional)
+    * [Serilog.AspNetCore](https://www.nuget.org/packages/Serilog.AspNetCore/5.0.0)
+    * [Serilog.Enrichers.Environment](https://www.nuget.org/packages/Serilog.Enrichers.Environment/2.2.0)
+    * [Serilog.Enrichers.Process](https://www.nuget.org/packages/Serilog.Enrichers.Process/)
+    * [Serilog.Enrichers.Thread](https://www.nuget.org/packages/Serilog.Enrichers.Thread/3.1.0)
+* Files
+  * .editor.config
+  * appsettings.json
+  * create-database.bat
+  * LICENSE (Optional)
+  * stylecop.json
+  
+* NuGet Packages (Optional)
+  * Auto Mapper
+    + [AutoMapper](https://www.nuget.org/packages/AutoMapper/)
+    + [AutoMapper.Extensions.Microsoft.DependencyInjection](https://www.nuget.org/packages/AutoMapper.Extensions.Microsoft.DependencyInjection/)
+  * Bogus
+    * [Bogus](https://www.nuget.org/packages/Bogus/)
+  * Fluent Validation
+    * [FluentValidation](https://www.nuget.org/packages/FluentValidation/)
+    * [FluentValidation.AspNetCore](https://www.nuget.org/packages/FluentValidation.AspNetCore/)
+    * [FluentValidation.DependencyInjectionExtensions](https://www.nuget.org/packages/FluentValidation.DependencyInjectionExtensions/)
+  * MediatR
+    * [MediatR](https://www.nuget.org/packages/MediatR/)
+    * [MediatR.Extensions.Microsoft.DependencyInjection](https://www.nuget.org/packages/MediatR.Extensions.Microsoft.DependencyInjection/)
 
+<!-- Requirements -->
 ## ![Requirements](/Assets/github-image16x16.png) Requirements
-* [Visual Studio 2022](https://visualstudio.microsoft.com/launch/) (For Visual Studio use only)
+* [Visual Studio 2022](https://visualstudio.microsoft.com/launch/)
 * [.NET 6.0](https://dotnet.microsoft.com/download/dotnet/6.0)
 * [Entity Framework Core tools for .NET Core CLI](https://docs.microsoft.com/en-us/ef/core/cli/dotnet)
 * [SQL Server Express](https://www.microsoft.com/en-us/sql-server/sql-server-downloads)
 
+<!-- Instalation -->
 ## ![Installation](/Assets/github-image16x16.png) Installation
 .NET CLI
 ```
-dotnet new --install AebSolutions.CodeConvention.SolutionTemplates::6.4.0
+dotnet new --install AebSolutions.CodeConvention.SolutionTemplates::6.5.0
 ```
 
 ## ![Instructions](/Assets/github-image16x16.png) Instructions
+Follow the in-app instructions for creating the database and seeding data.
 
-Create the database
-  + create-database.bat (root folder of solution)
-  + [.NET Core CLI](https://docs.microsoft.com/en-us/ef/core/cli/dotnet/)
-  + [Package Manager Console](https://docs.microsoft.com/en-us/ef/core/cli/powershell/)
-  
-If Sqlite is selected as the database provider, configure the `Build Action` to `None` and `Copy to Output Directory` to `Copy if newer` for the sqlite database that gets created in the project's root folder. Build the application after configuration.
 ## ![Help](/Assets/github-image16x16.png) Help
 .NET CLI
 ```
 dotnet new cc-console --help
+```
+```
+dotnet new cc-multi --help
+```
+```
+dotnet new cc-multiex --help
 ```
 ```
 dotnet new cc-razorpages --help

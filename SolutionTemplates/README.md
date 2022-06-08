@@ -30,11 +30,11 @@ Optional features will not be added unless selected. See individual templates fo
   * stylecop.json
   
 * NuGet Packages (Optional)
-  * AutoMapper
+  * Auto Mapper
     + [AutoMapper](https://www.nuget.org/packages/AutoMapper/)
     + [AutoMapper.Extensions.Microsoft.DependencyInjection](https://www.nuget.org/packages/AutoMapper.Extensions.Microsoft.DependencyInjection/)
   * [Bogus](https://www.nuget.org/packages/Bogus/)
-  * FluentValidation
+  * Fluent Validation
     * [FluentValidation](https://www.nuget.org/packages/FluentValidation/)
     * [FluentValidation.AspNetCore](https://www.nuget.org/packages/FluentValidation.AspNetCore/)
   * [FluentValidation.DependencyInjectionExtensions](https://www.nuget.org/packages/FluentValidation.DependencyInjectionExtensions/)

@@ -32,6 +32,7 @@ The following features are available for all solution templates, and have defaul
 * FluentValidation (Optional)
 * MediatR (Optional)
 
+<!-- Requirements -->
 ## ![Requirements](/Assets/github-image16x16.png) Requirements
 * [Visual Studio 2022](https://visualstudio.microsoft.com/launch/) version 17.0 and above
 * [.NET 6.0](https://dotnet.microsoft.com/download/dotnet/6.0)

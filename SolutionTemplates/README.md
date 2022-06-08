@@ -44,6 +44,7 @@ Optional features will not be added unless selected. See individual templates fo
     * [FluentValidation.AspNetCore](https://www.nuget.org/packages/FluentValidation.AspNetCore/)
     * [FluentValidation.DependencyInjectionExtensions](https://www.nuget.org/packages/FluentValidation.DependencyInjectionExtensions/)
   * MediatR
+    * [MediatR](https://www.nuget.org/packages/MediatR/)
     * [MediatR.Extensions.Microsoft.DependencyInjection](https://www.nuget.org/packages/MediatR.Extensions.Microsoft.DependencyInjection/)
 
 <!-- Requirements -->

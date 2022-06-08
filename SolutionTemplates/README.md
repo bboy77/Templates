@@ -14,15 +14,14 @@ Solution templates for the .NET command-line interface and `Visual Studio`.
 ## ![](/Assets/github-image16x16.png) Features
 * Dependency Injection
 * Generic Host
+* Logging
+  * Generic Host
+  * Serilog (Optional)
 * StyleCop configuration file
 * .editorconfig
 * create-database.bat: Creates an initial migration and database using the selected provider.
 * appsettings.json
 * LICENSE file for the solution (Optional)
-* Logging
-  * Generic Host
-  * Serilog (Optional)\
-    If selected, see appsettings.json for initial configuration.
 * Data Access with Entity Framework Core
   * SQL Server Express LocalDB
   * SQL Server Express

@@ -31,6 +31,7 @@ Optional features will not be added unless selected.
   
 * NuGet Packages
   * [AutoMapper](https://www.nuget.org/packages/AutoMapper/) (Optional)
+  * [AutoMapper.Extensions.Microsoft.DependencyInjection](https://www.nuget.org/packages/AutoMapper.Extensions.Microsoft.DependencyInjection/) (Optional)
   * [Bogus](https://github.com/bchavez/Bogus) (Optional)
   * FluentValidation (Optional)
   * MediatR (Optional)

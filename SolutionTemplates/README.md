@@ -37,7 +37,7 @@ The following features are available for all solution templates, and have defaul
 ## ![Requirements](/Assets/github-image16x16.png) Requirements
 * [Visual Studio 2022](https://visualstudio.microsoft.com/launch/) (For Visual Studio use only)
 * [.NET 6.0](https://dotnet.microsoft.com/download/dotnet/6.0)
-* [Entity Framework Core tools for .NET Core CLI (verion 6.0.5 and above)](https://docs.microsoft.com/en-us/ef/core/cli/dotnet)
+* [Entity Framework Core tools for .NET Core CLI](https://docs.microsoft.com/en-us/ef/core/cli/dotnet) verion 6.0.5 and above
 * [SQL Server Express](https://www.microsoft.com/en-us/sql-server/sql-server-downloads)
 
 ## ![Installation](/Assets/github-image16x16.png) Installation

@@ -11,6 +11,7 @@ Solution templates for the .NET command-line interface and `Visual Studio`.
 * [Multi Project Ex](https://github.com/bboy77/Templates/tree/main/SolutionTemplates/Content/Multi-ProjectEx/)
 
 <!-- Features -->
+Optional features will not be added unless selected.
 ## ![](/Assets/github-image16x16.png) Features
 * Database Provider (Entity Framework Core)
   * Sqlite

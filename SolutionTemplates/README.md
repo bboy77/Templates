@@ -12,7 +12,6 @@ Solution templates for the .NET command-line interface and `Visual Studio`.
 
 <!-- Features -->
 ## ![](/Assets/github-image16x16.png) Features
-The following features are available for all solution templates, and have default configurations.
 * Dependency Injection
 * Generic Host
 * StyleCop configuration file

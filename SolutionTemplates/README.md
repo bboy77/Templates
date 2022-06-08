@@ -22,7 +22,7 @@ Optional features will not be added unless selected. See individual templates fo
 * Logging
   * Generic Host
   * Serilog (Optional)
-    * [Serilog.AspNetCore](https://www.nuget.org/packages/Serilog.AspNetCore/6.0.0-dev-00265)
+    * [Serilog.AspNetCore](https://www.nuget.org/packages/Serilog.AspNetCore/5.0.0)
 * Files
   * .editor.config
   * appsettings.json

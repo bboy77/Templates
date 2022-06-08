@@ -23,6 +23,7 @@ Optional features will not be added unless selected. See individual templates fo
   * Generic Host
   * Serilog (Optional)
     * [Serilog.AspNetCore](https://www.nuget.org/packages/Serilog.AspNetCore/5.0.0)
+    * [Serilog.Enrichers.Environment](https://www.nuget.org/packages/Serilog.Enrichers.Environment/2.2.0)
 * Files
   * .editor.config
   * appsettings.json

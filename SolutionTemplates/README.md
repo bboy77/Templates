@@ -37,6 +37,7 @@ Solution templates for the .NET command-line interface and `Visual Studio`.
 * [Entity Framework Core tools for .NET Core CLI](https://docs.microsoft.com/en-us/ef/core/cli/dotnet) verion 6.0.5 and above
 * [SQL Server Express](https://www.microsoft.com/en-us/sql-server/sql-server-downloads)
 
+<!-- Instalation -->
 ## ![Installation](/Assets/github-image16x16.png) Installation
 .NET CLI
 ```

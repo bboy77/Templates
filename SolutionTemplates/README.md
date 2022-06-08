@@ -12,7 +12,7 @@ These templates are for those who are familiar with Dependency Injection, Hostin
 * [Web](/SolutionTemplates/Content/Web/)
   * [Razor Pages](/SolutionTemplates/Content/Web/RazorPages)
   * [Web API](/SolutionTemplates/Content/Web/WebApi)
-
+* [Multi Project](/SolutionTemplates/Content/)
 ## ![Features](/Assets/github-image16x16.png) Features
 The following features are available for all solution templates, and have default configurations.
 * Dependency Injection

@@ -28,8 +28,8 @@ Solution templates for the .NET command-line interface and `Visual Studio`.
   * LICENSE (Optional)
   * stylecop.json
 * NuGet Packages
-  * AutoMapper (Optional)
-  * Bogus (Optional)
+  * [AutoMapper]() AutoMapper (Optional)
+  * [Bogus](https://www.nuget.org/packages/Bogus/) Bogus (Optional)
   * FluentValidation (Optional)
   * MediatR (Optional)
 

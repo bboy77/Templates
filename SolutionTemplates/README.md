@@ -29,7 +29,7 @@ Optional features will not be added unless selected. See individual templates fo
   * LICENSE (Optional)
   * stylecop.json
   
-* NuGet Packages
+* NuGet Packages (Optional)
   * [AutoMapper](https://www.nuget.org/packages/AutoMapper/) (Optional)
   * [AutoMapper.Extensions.Microsoft.DependencyInjection](https://www.nuget.org/packages/AutoMapper.Extensions.Microsoft.DependencyInjection/) (Optional)
   * [Bogus](https://www.nuget.org/packages/Bogus/) (Optional)

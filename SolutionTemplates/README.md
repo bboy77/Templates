@@ -29,9 +29,8 @@ Solution templates for the .NET command-line interface and `Visual Studio`.
   * stylecop.json
 * NuGet Packages
   * AutoMapper (Optional)
-* AutoMapper (Optional)
-* FluentValidation (Optional)
-* MediatR (Optional)
+  * FluentValidation (Optional)
+  * MediatR (Optional)
 
 <!-- Requirements -->
 ## ![Requirements](/Assets/github-image16x16.png) Requirements

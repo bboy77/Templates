@@ -27,11 +27,8 @@ Solution templates for the .NET command-line interface and `Visual Studio`.
   * create-database.bat
   * LICENSE (Optional)
   * stylecop.json
+* NuGet Packages
 
-* Data Access with Entity Framework Core
-  * SQL Server Express LocalDB
-  * SQL Server Express
-  * Sqlite
 * AutoMapper (Optional)
 * FluentValidation (Optional)
 * MediatR (Optional)

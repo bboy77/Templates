@@ -21,10 +21,9 @@ Solution templates for the .NET command-line interface and `Visual Studio`.
   * .editor.config
   * appsettings.json
   * create-database.bat
+  * LICENSE (Optional)
   * stylecop.json
 
-
-* appsettings.json
 * LICENSE file for the solution (Optional)
 * Data Access with Entity Framework Core
   * SQL Server Express LocalDB

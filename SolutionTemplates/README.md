@@ -31,7 +31,7 @@ Optional features will not be added unless selected.
   
 * NuGet Packages
   * [AutoMapper]() AutoMapper (Optional)
-  * Bogus (Optional) [NuGet](https://www.nuget.org/packages/Bogus/)
+  * Bogus (Optional) [NuGet](https://www.nuget.org/packages/Bogus/) • [Github]()
   * FluentValidation (Optional)
   * MediatR (Optional)
 

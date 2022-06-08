@@ -10,6 +10,7 @@ Solution templates for the .NET command-line interface and `Visual Studio`.
 * [Web](https://github.com/bboy77/Templates/tree/main/SolutionTemplates/Content/Web/)
 * [Multi Project](https://github.com/bboy77/Templates/tree/main/SolutionTemplates/Content/Multi-Project/)
 
+<!-- Features -->
 ## ![](/Assets/github-image16x16.png) Features
 The following features are available for all solution templates, and have default configurations.
 * Dependency Injection

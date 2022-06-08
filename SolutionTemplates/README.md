@@ -13,6 +13,9 @@ Solution templates for the .NET command-line interface and `Visual Studio`.
 <!-- Features -->
 ## ![](/Assets/github-image16x16.png) Features
 * Database Provider (Entity Framework Core)
+  * Sqlite
+  * Sql Server Express
+  * Sql Server LocalDB
 * Dependency Injection
 * Generic Host
 * Logging

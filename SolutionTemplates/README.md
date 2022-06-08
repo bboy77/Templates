@@ -1,3 +1,4 @@
+<!-- Header -->
 # ![](/Assets/github-image32x32.png) Code Convention Templates
 
 Solution templates for the .NET command-line interface and `Visual Studio`.

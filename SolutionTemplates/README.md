@@ -27,6 +27,7 @@ Optional features will not be added unless selected. See individual templates fo
     * [Serilog.Enrichers.Process](https://www.nuget.org/packages/Serilog.Enrichers.Process/)
     * [Serilog.Enrichers.Thread](https://www.nuget.org/packages/Serilog.Enrichers.Thread/3.1.0)
     * [Serilog.Settings.Configuration](https://www.nuget.org/packages/Serilog.Settings.Configuration/3.3.0)
+    * [Serilog.Sinks.Console](https://www.nuget.org/packages/Serilog.Sinks.Console/4.0.1)
 * Files
   * .editor.config
   * appsettings.json

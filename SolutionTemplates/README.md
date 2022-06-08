@@ -55,6 +55,12 @@ Follow the in-app instructions for creating the database and sedding data.
 dotnet new cc-console --help
 ```
 ```
+dotnet new cc-multi --help
+```
+```
+dotnet new cc-multiex --help
+```
+```
 dotnet new cc-razorpages --help
 ```
 ```

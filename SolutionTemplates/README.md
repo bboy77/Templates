@@ -29,7 +29,7 @@ Solution templates for the .NET command-line interface and `Visual Studio`.
   * stylecop.json
 * NuGet Packages
   * [AutoMapper]() AutoMapper (Optional)
-  * [Bogus](https://www.nuget.org/packages/Bogus/) Bogus (Optional)
+  * [Bogus](https://www.nuget.org/packages/Bogus/) (Optional)
   * FluentValidation (Optional)
   * MediatR (Optional)
 

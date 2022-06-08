@@ -26,6 +26,7 @@ Optional features will not be added unless selected. See individual templates fo
     * [Serilog.Enrichers.Environment](https://www.nuget.org/packages/Serilog.Enrichers.Environment/2.2.0)
     * [Serilog.Enrichers.Process](https://www.nuget.org/packages/Serilog.Enrichers.Process/)
     * [Serilog.Enrichers.Thread](https://www.nuget.org/packages/Serilog.Enrichers.Thread/3.1.0)
+    * [Serilog.Settings.Configuration](https://www.nuget.org/packages/Serilog.Settings.Configuration/3.3.0)
 * Files
   * .editor.config
   * appsettings.json

@@ -19,9 +19,10 @@ Solution templates for the .NET command-line interface and `Visual Studio`.
   * Serilog (Optional)
 * Files
   * .editor.config
+  * create-database.bat
   * stylecop.json
-  * 
-* create-database.bat: Creates an initial migration and database using the selected provider.
+
+
 * appsettings.json
 * LICENSE file for the solution (Optional)
 * Data Access with Entity Framework Core

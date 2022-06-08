@@ -12,6 +12,7 @@ Solution templates for the .NET command-line interface and `Visual Studio`.
 
 <!-- Features -->
 ## ![](/Assets/github-image16x16.png) Features
+* Database Provider (Entity Framework Core)
 * Dependency Injection
 * Generic Host
 * Logging
@@ -24,7 +25,6 @@ Solution templates for the .NET command-line interface and `Visual Studio`.
   * LICENSE (Optional)
   * stylecop.json
 
-* LICENSE file for the solution (Optional)
 * Data Access with Entity Framework Core
   * SQL Server Express LocalDB
   * SQL Server Express

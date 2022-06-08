@@ -47,7 +47,7 @@ dotnet new --install AebSolutions.CodeConvention.SolutionTemplates::6.5.0
 ```
 
 ## ![Instructions](/Assets/github-image16x16.png) Instructions
-Follow the in-app instructions for creating the database and sedding data.
+Follow the in-app instructions for creating the database and seeding data.
 
 ## ![Help](/Assets/github-image16x16.png) Help
 .NET CLI

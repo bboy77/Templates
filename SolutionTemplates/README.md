@@ -43,7 +43,7 @@ The following features are available for all solution templates, and have defaul
 ## ![Installation](/Assets/github-image16x16.png) Installation
 .NET CLI
 ```
-dotnet new --install AebSolutions.CodeConvention.SolutionTemplates::6.4.0
+dotnet new --install AebSolutions.CodeConvention.SolutionTemplates::6.5.0
 ```
 
 ## ![Instructions](/Assets/github-image16x16.png) Instructions

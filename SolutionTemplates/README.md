@@ -19,6 +19,7 @@ Solution templates for the .NET command-line interface and `Visual Studio`.
   * Serilog (Optional)
 * Files
   * .editor.config
+  * appsettings.json
   * create-database.bat
   * stylecop.json
 

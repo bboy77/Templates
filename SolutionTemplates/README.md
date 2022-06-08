@@ -29,7 +29,7 @@ Optional features will not be added unless selected.
   * LICENSE (Optional)
   * stylecop.json
   
-* NuGet Packages <br /> If selected, the following packages will be added to the solution.
+* NuGet Packages
   * [AutoMapper]() AutoMapper (Optional)
   * [Bogus](https://www.nuget.org/packages/Bogus/) (Optional)
   * FluentValidation (Optional)

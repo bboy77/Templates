@@ -30,7 +30,7 @@ Optional features will not be added unless selected.
   * stylecop.json
   
 * NuGet Packages
-  * [AutoMapper]() AutoMapper (Optional)
+  * [AutoMapper](https://github.com/AutoMapper) (Optional)
   * [Bogus](https://github.com/bchavez/Bogus) (Optional)
   * FluentValidation (Optional)
   * MediatR (Optional)

@@ -12,7 +12,7 @@ Solution templates for the .NET command-line interface and `Visual Studio`.
 
 <!-- Features -->
 ## ![](/Assets/github-image16x16.png) Features
-Optional features will not be added unless selected.
+Optional features will not be added unless selected. See individual templates for optional packages that are available.
 * Database Provider (Entity Framework Core)
   * Sqlite
   * Sql Server Express

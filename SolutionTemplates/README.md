@@ -24,6 +24,7 @@ Optional features will not be added unless selected. See individual templates fo
   * Serilog (Optional)
     * [Serilog.AspNetCore](https://www.nuget.org/packages/Serilog.AspNetCore/5.0.0)
     * [Serilog.Enrichers.Environment](https://www.nuget.org/packages/Serilog.Enrichers.Environment/2.2.0)
+    * [Serilog.Enrichers.Process](https://www.nuget.org/packages/Serilog.Enrichers.Process/)
 * Files
   * .editor.config
   * appsettings.json

@@ -47,13 +47,8 @@ dotnet new --install AebSolutions.CodeConvention.SolutionTemplates::6.4.0
 ```
 
 ## ![Instructions](/Assets/github-image16x16.png) Instructions
+Follow the in-app instructions for creating the database and sedding data.
 
-Create the database
-  + create-database.bat (root folder of solution)
-  + [.NET Core CLI](https://docs.microsoft.com/en-us/ef/core/cli/dotnet/)
-  + [Package Manager Console](https://docs.microsoft.com/en-us/ef/core/cli/powershell/)
-  
-If Sqlite is selected as the database provider, configure the `Build Action` to `None` and `Copy to Output Directory` to `Copy if newer` for the sqlite database that gets created in the project's root folder. Build the application after configuration.
 ## ![Help](/Assets/github-image16x16.png) Help
 .NET CLI
 ```

@@ -26,7 +26,7 @@ Optional features will not be added unless selected.
   * .editor.config
   * appsettings.json
   * create-database.bat
-  * LICENSE <bold>(Optional)</bold>
+  * LICENSE (Optional)
   * stylecop.json
   
 * NuGet Packages

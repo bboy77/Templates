@@ -51,7 +51,7 @@ Optional features will not be added unless selected. See individual templates fo
     * [MediatR](https://www.nuget.org/packages/MediatR/)
     * [MediatR.Extensions.Microsoft.DependencyInjection](https://www.nuget.org/packages/MediatR.Extensions.Microsoft.DependencyInjection/)
   * StyleCop
-
+    * [StyleCop.Analyzers](https://www.nuget.org/packages/StyleCop.Analyzers/1.2.0-beta.406)
 <!-- Requirements -->
 ## ![Requirements](/Assets/github-image16x16.png) Requirements
 * [Visual Studio 2022](https://visualstudio.microsoft.com/launch/)

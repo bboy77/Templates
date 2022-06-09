@@ -12,7 +12,7 @@ Solution templates for the .NET command-line interface and `Visual Studio`.
 
 <!-- Features -->
 ## ![](/Assets/github-image16x16.png) Features
-Optional features will not be added unless selected. See individual templates for optional packages that are available.
+Optional features will not be added unless selected. See individual templates for optional parameters that are available.
 * StyleCop
   * [StyleCop.Analyzers](https://www.nuget.org/packages/StyleCop.Analyzers/1.2.0-beta.406)
 * [Database Providers (Entity Framework Core)](https://docs.microsoft.com/en-us/ef/core/providers/?tabs=dotnet-core-cli)

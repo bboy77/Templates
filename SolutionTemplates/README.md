@@ -53,7 +53,7 @@ Optional features will not be added unless selected. See individual templates fo
     * [MediatR.Extensions.Microsoft.DependencyInjection](https://www.nuget.org/packages/MediatR.Extensions.Microsoft.DependencyInjection/)
     
 <!-- Requirements -->
-## ![Requirements](/Assets/github-image16x16.png) Requirements
+## ![](/Assets/github-image16x16.png) Requirements
 * [Visual Studio 2022](https://visualstudio.microsoft.com/launch/)
 * [.NET 6.0](https://dotnet.microsoft.com/download/dotnet/6.0)
 * [Entity Framework Core tools for .NET Core CLI](https://docs.microsoft.com/en-us/ef/core/cli/dotnet)

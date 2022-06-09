@@ -29,6 +29,7 @@ Optional features will not be added unless selected. See individual templates fo
     * [Serilog.Settings.Configuration](https://www.nuget.org/packages/Serilog.Settings.Configuration/3.3.0)
     * [Serilog.Sinks.Console](https://www.nuget.org/packages/Serilog.Sinks.Console/4.0.1)
     * [Serilog.Sinks.Debug](https://www.nuget.org/packages/Serilog.Sinks.Debug/)
+    * [Serilog.Sinks.File](https://www.nuget.org/packages/Serilog.Sinks.File/5.0.0)
 * Files
   * .editor.config
   * appsettings.json

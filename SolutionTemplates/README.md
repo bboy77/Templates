@@ -3,7 +3,7 @@
 Solution templates for the .NET command-line interface and `Visual Studio`.
 
 <!-- Solution Templates -->
-## ![](/Assets/github-image16x16.png) Solution Templates
+## ![](https://github.com/bboy77/Templates/blob/main/Assets/github-image16x16.png) Solution Templates
 * [Console](https://github.com/bboy77/Templates/tree/main/SolutionTemplates/Content/Console/)
 * [Desktop](https://github.com/bboy77/Templates/tree/main/SolutionTemplates/Content/Desktop/)
 * [Web](https://github.com/bboy77/Templates/tree/main/SolutionTemplates/Content/Web/)

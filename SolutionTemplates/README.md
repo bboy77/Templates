@@ -38,7 +38,6 @@ Optional features will not be added unless selected. See individual templates fo
   * create-database.bat
   * LICENSE (Optional)
   * stylecop.json
-  
 * NuGet Packages (Optional)
   * Auto Mapper
     + [AutoMapper](https://www.nuget.org/packages/AutoMapper/)

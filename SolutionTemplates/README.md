@@ -11,7 +11,7 @@ Solution templates for the .NET command-line interface and `Visual Studio`.
 * [Multi Project Ex](https://github.com/bboy77/Templates/tree/main/SolutionTemplates/Content/Multi-ProjectEx/)
 
 <!-- Features -->
-## ![](/Assets/github-image16x16.png) Features
+## ![] Features
 Optional features will not be added unless selected. See individual templates for optional parameters that are available.
 * StyleCop
   * [StyleCop.Analyzers](https://www.nuget.org/packages/StyleCop.Analyzers/1.2.0-beta.406)

@@ -26,7 +26,7 @@
         // Solution Items
         "{A960CAEF-7E58-4DA9-B908-65FC287A0D15}"
     ],
-    "identity": "AebSolutions.CodeConvention.Desktop.WinForms.6.4",
+    "identity": "AebSolutions.CodeConvention.Desktop.WinForms.6.5",
     "name": "Code Convention WinForms Application",
     "placeholderFilename": "-.-",
     "postActions": [

@@ -5,24 +5,6 @@
         <copyright>© Aeb Solutions. All rights reserved.</copyright>
         <description>
             Solution templates for the .NET command-line interface and Visual Studio.
-            Features:
-            • Dependency Injection
-            • Generic Host
-            • StyleCop configuration file
-            • .editorconfig file
-            • Batch file that creates an initial migration and database using the selected provider.
-			• appsettings.json
-            • LICENSE file for the solution (Optional)
-            • Logging
-                - Generic Host
-                - Serilog (Optional)
-            • Data Access with Entity Framework Core
-                - SQL Server Express LocalDB
-                - SQL Server Express
-                - Sqlite
-            • AutoMapper (Optional)
-            • FluentValidation (Optional)
-            • MediatR (Optional)
         </description>
         <icon>Icon.png</icon>
         <id>AebSolutions.CodeConvention.SolutionTemplates</id>
@@ -40,24 +22,6 @@
         <serviceable>true</serviceable>
         <summary>
             Solution templates for the .NET command-line interface and Visual Studio.
-            Features:
-            • Dependency Injection
-            • Generic Host
-            • StyleCop configuration file
-            • .editorconfig file
-            • Batch file that creates an initial migration and database using the selected provider.
-			• appsettings.json
-            • LICENSE file for the solution (Optional)
-            • Logging
-            - Generic Host
-            - Serilog (Optional)
-            • Data Access with Entity Framework Core
-            - SQL Server Express LocalDB
-            - SQL Server Express
-            - Sqlite
-            • AutoMapper (Optional)
-            • FluentValidation (Optional)
-            • MediatR (Optional)
         </summary>
         <tags>
             aebsolutions codeconvention solution template templates efcore aspnetcore EntityFrameworkCore Core Entity asp.net mediator mapping logging hosting

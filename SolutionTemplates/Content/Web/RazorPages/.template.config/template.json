@@ -25,7 +25,7 @@
         // Solution Items
         "{E1CDD620-90B7-48F9-90FA-17663B23D0F1}"
     ],
-    "identity": "AebSolutions.CodeConvention.Web.RazorPages.6.4",
+    "identity": "AebSolutions.CodeConvention.Web.RazorPages.6.5",
     "name": "Code Convention Razor Pages Application",
     "placeholderFilename": "-.-",
     "postActions": [

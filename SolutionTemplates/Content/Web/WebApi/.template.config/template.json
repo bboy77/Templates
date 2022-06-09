@@ -26,7 +26,7 @@
         // Solution Items
         "{36FF5F32-29BE-4138-A26F-2F45BFD326A5}"
     ],
-    "identity": "AebSolutions.CodeConvention.Web.WebAPI.6.4",
+    "identity": "AebSolutions.CodeConvention.Web.WebAPI.6.5",
     "name": "Code Convention Web API Application",
     "placeholderFilename": "-.-",
     "postActions": [

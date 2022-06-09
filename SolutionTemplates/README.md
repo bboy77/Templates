@@ -60,7 +60,7 @@ Optional features will not be added unless selected. See individual templates fo
 * [SQL Server Express](https://www.microsoft.com/en-us/sql-server/sql-server-downloads)
 
 <!-- Instalation -->
-## ![](/Assets/github-image16x16.png) Installation
+## ![] Installation
 .NET CLI
 ```
 dotnet new --install AebSolutions.CodeConvention.SolutionTemplates::6.5.0

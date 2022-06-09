@@ -207,7 +207,7 @@
         },
         "Company": {
             "datatype": "string",
-            "defaultValue": "My Company",
+            "defaultValue": "",
             "description": "The company or author name for the application. If omitted, the company or author name will be not be included in the file header.",
             "displayName": "Company (Optional)",
             "isRequired": false,
@@ -242,7 +242,7 @@
                 }
             ],
             "datatype": "choice",
-            "defaultValue": "MIT",
+            "defaultValue": "None",
             "description": "The Software Package Data Exchange (SPDX) license identifier for the solution. If \"None\" is selected, the license file will not be included in the solution and the license identifier will not be included in the file header.",
             "displayName": "License Identifier",
             "replaces": "LICENSE-IDENTIFIER",
@@ -293,7 +293,7 @@
         },
         "DatabaseTable": {
             "datatype": "string",
-            "defaultValue": "Account",
+            "defaultValue": "",
             "description": "The name of the initial table to create in the database.\n    This first table name should be singular.\n    If omitted, the inital database table will be named TodoItem.",
             "displayName": "Database Table (Optional)",
             "fileRename": "DatabaseTable",
@@ -303,7 +303,7 @@
         },
         "AddAutoMapper": {
             "datatype": "bool",
-            "defaultValue": "true",
+            "defaultValue": "false",
             "description": "Adds Nuget package(s)\n    AutoMapper.Extensions.Microsoft.DependencyInjection",
             "displayName": "Add AutoMapper (Optional)",
             "isRequired": false,
@@ -311,7 +311,7 @@
         },
         "AddBogus": {
             "datatype": "bool",
-            "defaultValue": "true",
+            "defaultValue": "false",
             "description": "Adds Nuget package(s) Bogus and a data generator class for the given table name.",
             "displayName": "Add Bogus (Optional)",
             "isRequired": false,
@@ -319,7 +319,7 @@
         },
         "AddFluentValidation": {
             "datatype": "bool",
-            "defaultValue": "true",
+            "defaultValue": "false",
             "description": "Adds Nuget package(s)\n    FluentValidation.DependencyInjectionExtensions",
             "displayName": "Add FluentValidation (Optional)",
             "isRequired": false,
@@ -327,7 +327,7 @@
         },
         "AddMediatR": {
             "datatype": "bool",
-            "defaultValue": "true",
+            "defaultValue": "false",
             "description": "Adds NuGet package(s)\n    MediatR\n    MediatR.Extensions.Microsoft.DependencyInjection",
             "displayName": "Add MediatR (Optional)",
             "isRequired": false,
@@ -335,7 +335,7 @@
         },
         "UseSerilog": {
             "datatype": "bool",
-            "defaultValue": "true",
+            "defaultValue": "false",
             "description": "Adds NuGet package(s)\n    Serilog.Enrichers.Environment\n    Serilog.Enrichers.Process\n    Serilog.Enrichers.Thread\n    Serilog.Extensions.Hosting\n    Serilog.Settings.Configuration\n    Serilog.Sinks.Console\n    Serilog.Sinks.Debug\n    Serilog.Sinks.File",
             "displayName": "Use Serilog (Optional)",
             "isRequired": false,

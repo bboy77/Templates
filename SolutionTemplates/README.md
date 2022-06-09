@@ -66,7 +66,7 @@ Optional features will not be added unless selected. See individual templates fo
 dotnet new --install AebSolutions.CodeConvention.SolutionTemplates::6.5.0
 ```
 
-## ![] Help
+## ![](https://github.com/bboy77/Templates/blob/main/Assets/github-image16x16.png) Help
 .NET CLI
 ```
 dotnet new cc-console --help

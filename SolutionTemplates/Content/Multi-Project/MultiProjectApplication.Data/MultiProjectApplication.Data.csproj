@@ -13,12 +13,12 @@
 
     <ItemGroup Label="Package References">
         <!--#if (DatabaseProviderIsSqlite)-->
-        <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="6.0.4" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="6.0.5" />
         <!--#endif-->
         <!--#if (DatabaseProviderIsSqlServer)-->
-        <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.4" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.5" />
         <!--#endif-->
-        <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.4">
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.5">
             <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
         </PackageReference>
         <PackageReference Include="StyleCop.Analyzers" Version="1.2.0-beta.406">

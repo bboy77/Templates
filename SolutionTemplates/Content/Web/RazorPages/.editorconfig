@@ -17,23 +17,8 @@ indent_size = 4
 indent_style = space
 insert_final_newline = false
 
-# IDE0047: Remove unnecessary parentheses
-dotnet_diagnostic.IDE0047.severity = none
-
-# SA1005: Single line comments should begin with single space
-dotnet_diagnostic.SA1005.severity = none
-
 # SA1101: Prefix local calls with this
 dotnet_diagnostic.SA1101.severity = none
-
-# SA1119: Statement should not use unnecessary parenthesis
-dotnet_diagnostic.SA1119.severity = none
-
-# SA1128: Put constructor initializers on their own line
-dotnet_diagnostic.SA1128.severity = none
-
-# SA1200: Using directives should be placed correctly
-dotnet_diagnostic.SA1200.severity = none
 
 # SA1309: Field names should not begin with underscore
 dotnet_diagnostic.SA1309.severity = none
@@ -41,17 +26,8 @@ dotnet_diagnostic.SA1309.severity = none
 # SA1402: File may only contain a single type
 dotnet_diagnostic.SA1402.severity = none
 
-# SA1512: Single-line comments should not be followed by blank line
-dotnet_diagnostic.SA1512.severity = none
-
-# SA1515: Single-line comment should be preceded by blank line
-dotnet_diagnostic.SA1515.severity = none
-
-# SA1516: Elements should be separated by blank line
-dotnet_diagnostic.SA1516.severity = none
-
-# SA1636: File header copyright text should match
-dotnet_diagnostic.SA1636.severity = none
-
 # SA1649: File name should match first type name
 dotnet_diagnostic.SA1649.severity = none
+
+# SA1600: Elements should be documented
+dotnet_diagnostic.SA1600.severity = none

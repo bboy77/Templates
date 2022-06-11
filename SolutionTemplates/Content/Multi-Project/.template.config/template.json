@@ -26,7 +26,7 @@
         // Solution Items
         "{57BE4AFD-B08A-4A5C-A268-E329A88C2B97}"
     ],
-    "identity": "AebSolutions.CodeConvention.Solution.6.5",
+    "identity": "AebSolutions.CodeConvention.Solution.6.6",
     "name": "Code Convention Multi-Project Application",
     "placeholderFilename": "-.-",
     "postActions": [
@@ -59,8 +59,7 @@
             "modifiers": [
                 {
                     "rename": {
-                        "create-database.cs": "create-database.bat",
-                        "create-scripts.cs": "create-scripts.bat" 
+                        "create-database.cs": "create-database.bat"
                     }
                 },
                 {

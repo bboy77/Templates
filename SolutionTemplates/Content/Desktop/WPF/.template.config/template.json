@@ -26,7 +26,7 @@
         // Solution Items
         "{C9DDFBB5-D82F-4AF5-965A-2848BD82880B}"
     ],
-    "identity": "AebSolutions.CodeConvention.Desktop.Wpf.6.5",
+    "identity": "AebSolutions.CodeConvention.Desktop.Wpf.6.6",
     "name": "Code Convention WPF Application",
     "placeholderFilename": "-.-",
     "postActions": [

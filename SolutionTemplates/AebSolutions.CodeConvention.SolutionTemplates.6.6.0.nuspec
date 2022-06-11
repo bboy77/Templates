@@ -27,10 +27,10 @@
             aebsolutions codeconvention solution template templates efcore aspnetcore EntityFrameworkCore Core Entity asp.net mediator mapping logging hosting
         </tags>
         <title>Aeb Solutions Code Convention Solution Templates</title>
-        <version>6.5.0</version>
+        <version>6.6.0</version>
     </metadata>
     <files>
-        <file exclude="**/*.txt;**/*.user;**/.vs/**/*;**/bin/**/*;**/obj/**/*" src="Content/" target="Content" />
+        <file exclude="**/*.txt;**/*.user;**/.vs/**/*;**/bin/**/*;**/obj/**/*" src="Content/**" />
         <file src="Icon.png" target="Icon.png" />
         <file src="README.md" target="README.md" />
     </files>

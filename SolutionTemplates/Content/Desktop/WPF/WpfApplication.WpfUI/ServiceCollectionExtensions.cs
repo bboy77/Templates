@@ -38,7 +38,7 @@ public static class ServiceCollectionExtensions
             options.UseSqlServer(hostBuilderContext.Configuration.GetConnectionString("DatabaseName")));
 #endif
 #else
-        serviceCollection.AddDbContext<DatabaseNameContext>(options =>
+        serviceCollection.AddDbContext<SolutionNameContext>(options =>
 #if (!DatabaseProviderIsSqlServer)
             options.UseSqlite(hostBuilderContext.Configuration.GetConnectionString("SolutionName")));
 #else

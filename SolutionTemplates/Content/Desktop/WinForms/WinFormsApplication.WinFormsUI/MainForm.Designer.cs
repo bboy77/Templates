@@ -36,12 +36,13 @@ partial class MainForm
             this.AutoScaleDimensions = new System.Drawing.SizeF(17F, 41F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+#if (AddIcon)
+			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+#endif
             this.Name = "MainForm";
             this.Text = "SolutionName";
             this.ResumeLayout(false);
 
     }
-
-#endregion
+    #endregion
 }

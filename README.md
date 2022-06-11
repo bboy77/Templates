@@ -2,3 +2,6 @@
 Templates for the .NET command-line interface and `Visual Studio`.
 
 * [Solution Templates](/SolutionTemplates)
+
+# Featured Template
+* [Multi-ProjectEx]()

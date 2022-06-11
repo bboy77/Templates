@@ -63,7 +63,7 @@ Optional features will not be added unless selected. See individual templates fo
 ## ![](https://github.com/bboy77/Templates/blob/main/Assets/github-image16x16.png) Installation
 .NET CLI
 ```
-dotnet new --install AebSolutions.CodeConvention.SolutionTemplates::6.5.0
+dotnet new --install AebSolutions.CodeConvention.SolutionTemplates::6.6.0
 ```
 
 ## ![](https://github.com/bboy77/Templates/blob/main/Assets/github-image16x16.png) Help

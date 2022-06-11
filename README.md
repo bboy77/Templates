@@ -2,7 +2,6 @@
 Templates for the .NET command-line interface and `Visual Studio`.
 
 [Solution Templates](https://github.com/bboy77/Templates/tree/main/SolutionTemplates)
-
 ### ![](https://github.com/bboy77/Templates/blob/main/Assets/github-image16x16.png) Featured Template
 [Multi-ProjectEx](https://github.com/bboy77/Templates/tree/main/SolutionTemplates/Content/Multi-ProjectEx)
 Testers needed and any input would be greatly appreciated.

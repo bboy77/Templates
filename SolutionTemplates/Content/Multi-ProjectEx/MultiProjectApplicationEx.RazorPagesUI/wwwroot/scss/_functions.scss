@@ -1,0 +1,10 @@
+@use "sass:math" as *;
+
+@function to-hsla($color) {
+    $hue: round(div(hue($color), 1deg));
+    $saturation: round(saturation($color));
+    $lightness: round(lightness($color));
+    $alpha: alpha($color);
+
+    @return unquote("hsla(#{$hue}, #{$saturation}, #{$lightness}, #{$alpha})");
+}

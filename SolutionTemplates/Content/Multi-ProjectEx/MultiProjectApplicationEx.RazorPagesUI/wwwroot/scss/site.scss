@@ -42,10 +42,10 @@ dl dt {
     margin-top: 3rem;
 }
 
-    .about-page svg, .database-error-page svg, .database-warning-page svg, .home-page svg, .privacy-page svg {
-        height: 16rem;
-        width: 16rem;
-    }
+.about-page svg, .database-error-page svg, .database-warning-page svg, .home-page svg, .privacy-page svg {
+    height: 16rem;
+    width: 16rem;
+}
 
 .about-page-button, .database-warning-page-button {
     display: flex;
@@ -54,10 +54,10 @@ dl dt {
     padding: .5rem .75rem;
 }
 
-    .about-page-button a svg, .database-warning-page-button a svg {
-        height: 1rem;
-        width: 1rem;
-    }
+.about-page-button a svg, .database-warning-page-button a svg {
+    height: 1rem;
+    width: 1rem;
+}
 
 .database-error-page p a, .database-warning-page p a, .home-page p a {
     text-decoration: none;

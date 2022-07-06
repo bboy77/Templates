@@ -1,0 +1,46 @@
+// Colors
+$colors-base: ( 
+    "vs-bg": #424242, 
+    "vs-fg": #f0eff1, 
+    "vs-out": #f6f6f6,
+);
+
+$colors-extended: ( 
+    "vs-action-blue": #00539c, 
+    "vs-action-green": #388a34, 
+    "vs-action-orange": #c27d1a, 
+    "vs-action-red": #a1260d, 
+);
+
+$colors-folder: ( 
+    "folder": #dcb67a,
+);
+
+$colors-intellisense: ( 
+    "background": #424242, 
+    "vs-action-blue": #00539c, 
+    "vs-action-green": #388a34, 
+    "vs-action-orange": #c27d1a, 
+    "vs-action-purple": #652d90,
+);
+
+$colors-notifications: ( 
+    "black": #000000, 
+    "vs-blue": #1ba1e2, 
+    "vs-green": #339933, 
+    "vs-orange": #ffcc00, 
+    "vs-red": #e51400, 
+    "white": #ffffff,
+);
+
+$colors-visual-studio-languages: ( 
+    "asp-html-wpf-blue": #0095d7, 
+    "cpp-purple": #9b4f96, 
+    "cs-green": #388a34, 
+    "css-red": #bd1e2d, 
+    "fs-purple": #672878, 
+    "js-orange": #f16421, 
+    "py-green": #879636, 
+    "ts-orange": #e04c06, 
+    "vb-blue": #00539c,
+);

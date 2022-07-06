@@ -1,72 +1,64 @@
-@use "functions" as *;
+/* buttons.scss */
+@use "../abstracts" as *;
+@use "sass:color";
+
+
+%btn-base {
+    $color: to-hsla(map-get( $map: $colors-notifications, $key: "white" ) );
+
+    border: 1px solid transparent;
+    align-items: center;
+    color: $color;
+    display: flex;
+    border-radius: .25rem;
+    padding: .5rem .75rem;
+    gap: 0.5rem;
+    justify-content: center;
+
+    &:hover {
+        color: $color;
+    }
+
+    & > svg {
+        height: 1em;
+        width: 1em;
+    }
+}
+
+@mixin set-button($background-color) {
+    background-color: to-hsla($background-color);
+
+    &:active,
+    &:focus {
+        box-shadow: 0 0 0 0.25rem to-hsla(color.adjust($background-color, $alpha: -0.5));
+    }
+
+    &:active,
+    &:focus,
+    &:hover {
+        background-color: to-hsla(color.adjust($background-color, $lightness: -10%));
+    }
+}
 
 .btn-back,
-.btn-back:hover,
 .btn-create,
-.btn-create:hover,
 .btn-delete,
-.btn-delete:hover,
-.btn-edit,
-.btn-edit:hover {
-    align-items: center;
-    color: white;
-    display: flex;
-    gap: .5rem;
-    padding: .5rem .75rem;
+.btn-edit {
+    @extend %btn-base;
 }
 
 .btn-back {
-    background-color: var(--vs-bg);
-}
-
-.btn-back:active,
-.btn-back:focus,
-.btn-back:hover {
-    background-color: var(--vs-bg-dark);
-}
-
-.btn-back:active,
-.btn-back:focus {
-    box-shadow: 0 0 0 0.25rem hsla(0, 0%, 16%, .5);
+    @include set-button(map-get($colors-base, "vs-bg"));
 }
 
 .btn-create {
-    background-color: var(--vs-green);
-}
-
-.btn-create:active,
-.btn-create:focus,
-.btn-create:hover {
-    background-color: var(--vs-action-green);
-}
-
-.btn-create:active,
-.btn-create:focus {
-    box-shadow: 0 0 0 0.25rem hsla(117, 45%, 37%, .5);
+    @include set-button(map-get($colors-notifications, "vs-green"));
 }
 
 .btn-delete {
-    background-color: var(--vs-red);
-}
-
-.btn-delete:active,
-.btn-delete:focus,
-.btn-delete:hover {
-    background-color: var(--vs-action-red);
-}
-
-.btn-delete:active, .btn-delete:focus {
-    box-shadow: 0 0 0 0.25rem hsla(10, 85%, 34%, .5);
+    @include set-button(map-get($colors-notifications, "vs-red"));
 }
 
 .btn-edit {
-    background-color: var(--vs-blue);
-}
-
-.btn-edit:active, .btn-edit:focus, .btn-edit:hover {
-    background-color: var(--vs-action-blue);
-}
-
-.btn-edit:active, .btn-edit:focus {
-    box-shadow: 0 0 0 0.25rem hsla(208, 100%, 31%, .5);
+    @include set-button(map-get($colors-notifications, "vs-blue"));
 }

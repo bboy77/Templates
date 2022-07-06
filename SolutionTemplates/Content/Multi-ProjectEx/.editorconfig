@@ -16,6 +16,7 @@ end_of_line = crlf
 indent_size = 4
 indent_style = space
 insert_final_newline = false
+max_line_length=100
 
 # SA1101: Prefix local calls with this
 dotnet_diagnostic.SA1101.severity = none
@@ -31,3 +32,6 @@ dotnet_diagnostic.SA1649.severity = none
 
 # SA1600: Elements should be documented
 dotnet_diagnostic.SA1600.severity = none
+
+[*.*scss]
+max_line_length=100

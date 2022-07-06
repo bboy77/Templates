@@ -1,0 +1,23 @@
+@page
+@model MultiProjectApplicationEx.RazorPagesUI.Pages.StylesModel
+@{
+    ViewData["Title"] = "Styles";
+}
+
+<h1>Styles</h1>
+
+<h2>Buttons</h2>
+
+<div class="d-inline-flex gap-1">
+    <button class="btn-create">
+        <svg><use xlink:href="#AddRowButton"></use></svg>
+        <span>Create</span>
+    </button>
+    <button class="btn-edit">
+        <svg><use xlink:href="#EditDatabaseButton"></use></svg>
+
+        Edit
+    </button>
+
+</div>
+

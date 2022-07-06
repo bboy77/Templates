@@ -1,0 +1,55 @@
+/* navigation.scss */
+.navbar-brand,
+.navbar-brand:hover,
+.nav-link,
+.nav-link:hover {
+    color: var(--vs-fg);
+}
+
+.nav-link {
+    border-radius: 0.5rem;
+    margin-right: 0.5rem;
+    padding: 0.25rem;
+}
+
+.nav-link.active {
+    background-color: var(--vs-fg);
+    color: var(--vs-action-purple);
+}
+
+.navbar {
+    background-color: var(--vs-action-purple);
+    box-shadow: 0 0.125rem 0.5rem var(--vs-bg);
+    margin-bottom: 1rem;
+}
+
+.navbar-brand {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.navbar-brand {
+    svg {
+        height: 2rem;
+        width: 2rem;
+    }
+}
+
+.navbar-brand span {
+    font-size: 1.25rem;
+}
+
+.navbar-toggler {
+    border: 1px solid var(--vs-fg);
+}
+
+.navbar-toggler:hover,
+.navbar-toggler:focus {
+    border: 2px solid var(--vs-fg);
+    box-shadow: none;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28240, 249, 241, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}

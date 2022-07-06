@@ -1,0 +1,100 @@
+/* cards.scss */
+@use "../abstracts" as *;
+
+%card-base {
+    border: 2px solid to-hsla(map-get($colors-base, "vs-bg"));
+    border-radius: .5rem;
+    box-shadow: 0 .125rem .125rem #f6f6f6;
+    color: to-hsla(map-get($colors-base, "vs-out"));
+    overflow: hidden;
+}
+
+.card {
+    background-color: to-hsla(map-get($colors-base, "vs-bg"));
+
+    @extend %card-base;
+
+    > .card-header {
+        $size: 1.5rem;
+        align-items: center;
+        background-color: to-hsla(map-get($colors-base, "vs-bg"));
+        display: flex;
+        padding: 0.5rem 1rem;
+        margin: 0;
+
+        > .card-title {
+            padding: 0;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            gap: .5rem;
+
+            svg {
+                height: $size;
+                width: $size;
+            }
+
+            span {
+                font-size: 1rem * .9;
+                font-weight: 400;
+            }
+        }
+    }
+
+    .card-body {
+        background-color: map-get($colors-base, "vs-out");
+        color: to-hsla(map-get($colors-base, "vs-bg"));
+    }
+}
+
+
+/*.card-footer, .card-header {
+    background-color: var(--vs-fg);
+    border: 0;
+    color: var(--vs-bg);
+    display: flex;
+}
+
+.card-footer {
+    justify-content: end;
+    gap: .5rem;
+}
+
+.card-footer button {
+    align-items: center;
+    display: flex;
+    gap: .5rem;
+    padding: .5rem .75rem;
+}
+
+.card-footer button svg, .card-footer a svg {
+    height: 1rem;
+    width: 1rem;
+}
+
+.card-header svg {
+    height: 1rem;
+    width: 1rem;
+}
+
+.card-title {
+    display: flex;
+    gap: .25rem;
+    margin: auto;
+}
+
+.card-title span, .card-title svg {
+    margin: auto;
+}
+
+.card-title span {
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.card-title svg {
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+*/

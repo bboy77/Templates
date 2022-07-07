@@ -30,7 +30,7 @@
         <version>6.6.0</version>
     </metadata>
     <files>
-        <file exclude="**/*.txt;**/*.user;**/.vs/**/*;**/bin/**/*;**/obj/**/*" src="Content/**" />
+        <file exclude="**/*.txt;**/*.user;**/.vs/**/*;**/bin/**/*;**/node_modules/**/*;**/package-lock.json;**/obj/**/*;" src="Content/**" />
         <file src="Icon.png" target="Icon.png" />
         <file src="README.md" target="README.md" />
     </files>
